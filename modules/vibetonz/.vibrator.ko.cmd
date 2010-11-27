@@ -1,0 +1,1 @@
+cmd_/home/spica/Samdroid-Turbo-Kernel/modules/vibetonz/vibrator.ko := /opt/ctng/bin/arm-spica-linux-uclibcgnueabi-ld -EL -r   -o /home/spica/Samdroid-Turbo-Kernel/modules/vibetonz/vibrator.ko /home/spica/Samdroid-Turbo-Kernel/modules/vibetonz/vibrator.o /home/spica/Samdroid-Turbo-Kernel/modules/vibetonz/vibrator.mod.o

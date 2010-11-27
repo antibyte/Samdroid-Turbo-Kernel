@@ -1,0 +1,1805 @@
+  CLEAN   /home/spica/i5700.2/kernel
+  CLEAN   arch/arm/kernel
+  CLEAN   drivers/char
+  CLEAN   init
+  CLEAN   kernel
+  CLEAN   lib
+  CLEAN   usr
+  CLEAN   .tmp_versions
+  CLEAN   include/asm-arm/mach-types.h
+  CHK     include/linux/version.h
+  SYMLINK include/asm -> include/asm-arm
+  HOSTCC  scripts/basic/fixdep
+  Generating include/asm-arm/mach-types.h
+  CHK     include/linux/utsrelease.h
+scripts/basic/fixdep.c: In function ‘traps’:
+scripts/basic/fixdep.c:377: warning: dereferencing type-punned pointer will break strict-aliasing rules
+scripts/basic/fixdep.c:379: warning: dereferencing type-punned pointer will break strict-aliasing rules
+  HOSTCC  scripts/basic/docproc
+  HOSTCC  scripts/basic/hash
+  CC      kernel/bounds.s
+  HOSTCC  scripts/ihex2fw
+  HOSTCC  scripts/kallsyms
+  CC      scripts/mod/empty.o
+  GEN     include/linux/bounds.h
+scripts/kallsyms.c: In function ‘read_symbol’:
+scripts/kallsyms.c:74: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result
+  CC      arch/arm/kernel/asm-offsets.s
+  HOSTCC  scripts/mod/mk_elfconfig
+scripts/ihex2fw.c: In function ‘output_records’:
+scripts/ihex2fw.c:261: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result
+scripts/ihex2fw.c:266: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result
+  MKELF   scripts/mod/elfconfig.h
+  HOSTCC  scripts/mod/file2alias.o
+  HOSTCC  scripts/conmakehash
+  GEN     include/asm/asm-offsets.h
+  HOSTCC  scripts/bin2c
+  CALL    scripts/checksyscalls.sh
+<stdin>:1097:2: warning: #warning syscall fadvise64 not implemented
+<stdin>:1265:2: warning: #warning syscall migrate_pages not implemented
+<stdin>:1321:2: warning: #warning syscall pselect6 not implemented
+<stdin>:1325:2: warning: #warning syscall ppoll not implemented
+<stdin>:1365:2: warning: #warning syscall epoll_pwait not implemented
+  HOSTCC  scripts/mod/modpost.o
+  HOSTCC  scripts/mod/sumversion.o
+scripts/mod/modpost.c: In function ‘get_markers’:
+scripts/mod/modpost.c:1542: warning: ignoring return value of ‘asprintf’, declared with attribute warn_unused_result
+scripts/mod/modpost.c: In function ‘add_marker’:
+scripts/mod/modpost.c:1962: warning: ignoring return value of ‘asprintf’, declared with attribute warn_unused_result
+  HOSTLD  scripts/mod/modpost
+  CC      init/main.o
+  CHK     include/linux/compile.h
+  HOSTCC  usr/gen_init_cpio
+  CC      arch/arm/kernel/compat.o
+  UPD     include/linux/compile.h
+  CC      arch/arm/mm/dma-mapping.o
+  CC      arch/arm/kernel/elf.o
+  GEN     usr/initramfs_data.cpio.gz
+  AS      arch/arm/kernel/entry-armv.o
+  AS      arch/arm/kernel/entry-common.o
+  CC      arch/arm/kernel/irq.o
+  CC      arch/arm/mm/extable.o
+  CC      init/do_mounts.o
+  CC      arch/arm/mm/fault.o
+  AS      usr/initramfs_data.o
+  LD      usr/built-in.o
+  CC      arch/arm/common/vic.o
+  CC      arch/arm/kernel/process.o
+  LD      arch/arm/common/built-in.o
+  LD      arch/arm/mach-s3c6400/built-in.o
+  CC      arch/arm/mach-s3c6410/cpu.o
+  CC      arch/arm/mm/init.o
+  CC      init/do_mounts_rd.o
+  CC      arch/arm/mach-s3c6410/irq.o
+  CC      arch/arm/kernel/ptrace.o
+  CC      arch/arm/mach-s3c6410/setup-sdhci.o
+  CC      arch/arm/mm/iomap.o
+  CC      arch/arm/mach-s3c6410/pm.o
+  CC      arch/arm/kernel/setup.o
+  CC      arch/arm/mm/fault-armv.o
+  CC      arch/arm/mach-s3c6410/mach-spica.o
+  CC      arch/arm/mm/flush.o
+  CC      init/do_mounts_initrd.o
+In file included from arch/arm/mach-s3c6410/mach-spica.c:61:
+arch/arm/plat-s3c64xx/include/plat/adcts.h:48: warning: useless storage class specifier in empty declaration
+  CC      arch/arm/kernel/signal.o
+  CC      arch/arm/mm/ioremap.o
+  CC      init/initramfs.o
+  CC      arch/arm/mach-s3c6410/board-rfkill.o
+  CC      arch/arm/mm/mmap.o
+  CC      arch/arm/kernel/sys_arm.o
+  CC      arch/arm/mach-s3c6410/sec_headset.o
+  CC      arch/arm/mm/pgd.o
+arch/arm/mach-s3c6410/sec_headset.c:86: warning: function declaration isn't a prototype
+arch/arm/mach-s3c6410/sec_headset.c:98: warning: initialization from incompatible pointer type
+arch/arm/mach-s3c6410/sec_headset.c:136: warning: initialization from incompatible pointer type
+arch/arm/mach-s3c6410/sec_headset.c: In function 'headset_detect_timer_handler':
+arch/arm/mach-s3c6410/sec_headset.c:158: warning: passing argument 1 of 'schedule_work' from incompatible pointer type
+arch/arm/mach-s3c6410/sec_headset.c: In function 'sec_headset_probe':
+arch/arm/mach-s3c6410/sec_headset.c:388: warning: 'det_headset' may be used uninitialized in this function
+  CC      arch/arm/kernel/stacktrace.o
+  CC      arch/arm/mm/mmu.o
+  CC      arch/arm/kernel/time.o
+  LD      arch/arm/mach-s3c6410/built-in.o
+  CC      arch/arm/mm/proc-syms.o
+arch/arm/mm/mmu.c: In function 'sanity_check_meminfo':
+arch/arm/mm/mmu.c:697: warning: comparison between pointer and integer
+  CC      init/calibrate.o
+  CC      arch/arm/mm/alignment.o
+  CC      arch/arm/kernel/traps.o
+  CC      init/version.o
+  LD      init/mounts.o
+  LD      init/built-in.o
+  CC      arch/arm/plat-s3c64xx/dev-uart.o
+  AS      arch/arm/mm/abort-ev6.o
+  AS      arch/arm/mm/cache-v6.o
+  CC      arch/arm/mm/copypage-v6.o
+  CC      arch/arm/plat-s3c64xx/devs.o
+  CC      arch/arm/mm/context.o
+  CC      arch/arm/kernel/armksyms.o
+  AS      arch/arm/mm/tlb-v6.o
+  AS      arch/arm/mm/proc-v6.o
+In file included from arch/arm/plat-s3c64xx/devs.c:31:
+arch/arm/plat-s3c64xx/include/plat/adcts.h:48: warning: useless storage class specifier in empty declaration
+  CC      arch/arm/plat-s3c64xx/cpu.o
+  LD      arch/arm/mm/built-in.o
+  CC      arch/arm/plat-s3c64xx/irq.o
+  CC      arch/arm/plat-s3c/init.o
+  CC      arch/arm/kernel/module.o
+  CC      arch/arm/kernel/sys_oabi-compat.o
+  CC      arch/arm/plat-s3c/hr-time.o
+  CC      arch/arm/vfp/vfpmodule.o
+  CC      arch/arm/plat-s3c64xx/irq-eint.o
+  CC      arch/arm/kernel/io.o
+  AS      arch/arm/kernel/head.o
+  AS      arch/arm/vfp/entry.o
+  CC      arch/arm/plat-s3c64xx/clock.o
+  CC      arch/arm/kernel/init_task.o
+  AS      arch/arm/vfp/vfphw.o
+  CC      arch/arm/plat-s3c/clock.o
+  CC      arch/arm/vfp/vfpsingle.o
+arch/arm/plat-s3c64xx/clock.c: In function 's3c64xx_clk_set_rate':
+arch/arm/plat-s3c64xx/clock.c:238: warning: passing argument 2 of 's3c6410_changedivider' makes integer from pointer without a cast
+  LDS     arch/arm/kernel/vmlinux.lds
+  LD      arch/arm/kernel/built-in.o
+  CC      arch/arm/plat-s3c64xx/gpiolib.o
+  CC      kernel/sched.o
+  CC      arch/arm/plat-s3c/pwm-clock.o
+  CC      arch/arm/plat-s3c64xx/s3c64xx-init.o
+  CC      arch/arm/plat-s3c/gpio.o
+  CC      arch/arm/plat-s3c64xx/s3c64xx-clock.o
+  CC      arch/arm/vfp/vfpdouble.o
+  CC      arch/arm/plat-s3c/gpio-config.o
+  CC      arch/arm/plat-s3c/egpio.o
+  CC      arch/arm/plat-s3c/dma-pl080-sol.o
+  CC      arch/arm/plat-s3c64xx/s3c64xx-dvfs.o
+  AS      arch/arm/plat-s3c64xx/changefreq.o
+  CC      arch/arm/plat-s3c64xx/pm.o
+  CC      arch/arm/plat-s3c/dev-hsmmc.o
+  LD      arch/arm/vfp/vfp.o
+  LD      arch/arm/vfp/built-in.o
+  CC      arch/arm/plat-s3c/dev-hsmmc2.o
+arch/arm/plat-s3c64xx/pm.c:787: warning: 'extra_eint0pend' initialized and declared 'extern'
+  CC      arch/arm/plat-s3c/dev-i2c0.o
+  CC      kernel/fork.o
+  CC      arch/arm/plat-s3c/dev-i2c1.o
+  AS      arch/arm/plat-s3c64xx/sleep.o
+  CC      arch/arm/plat-s3c64xx/setup-i2c0.o
+  CC      arch/arm/plat-s3c64xx/setup-i2c1.o
+  LD      arch/arm/plat-s3c/built-in.o
+  CC      mm/bootmem.o
+  CC      arch/arm/plat-s3c64xx/s3c64xx-adcts.o
+In file included from arch/arm/plat-s3c64xx/s3c64xx-adcts.c:38:
+arch/arm/plat-s3c64xx/include/plat/adcts.h:48: warning: useless storage class specifier in empty declaration
+  CC      arch/arm/plat-s3c64xx/pwm-s3c6410.o
+  CC      mm/filemap.o
+  LD      arch/arm/plat-s3c64xx/built-in.o
+  CC      mm/mempool.o
+  CC      kernel/exec_domain.o
+  CC      kernel/panic.o
+  CC      kernel/printk.o
+  CC      mm/oom_kill.o
+  CC      mm/fadvise.o
+  CC      fs/open.o
+  CC      ipc/util.o
+  CC      mm/maccess.o
+  CC      kernel/cpu.o
+  CC      mm/page_alloc.o
+  CC      kernel/exit.o
+  CC      ipc/msgutil.o
+  CC      fs/read_write.o
+  CC      ipc/msg.o
+  CC      fs/file_table.o
+  CC      ipc/sem.o
+  CC      kernel/itimer.o
+  CC      fs/super.o
+  TIMEC   kernel/timeconst.h
+  CC      kernel/softirq.o
+  CC      ipc/shm.o
+  CC      mm/page-writeback.o
+  CC      fs/char_dev.o
+  CC      kernel/resource.o
+  CC      ipc/ipcns_notifier.o
+  CC      fs/stat.o
+  CC      ipc/ipc_sysctl.o
+  CC      kernel/sysctl.o
+  CC      mm/pdflush.o
+  CC      fs/exec.o
+  CC      ipc/mqueue.o
+  CC      mm/readahead.o
+  CC      mm/swap.o
+  CC      kernel/capability.o
+  LD      ipc/built-in.o
+  CC      fs/pipe.o
+  CC      security/commoncap.o
+  CC      mm/truncate.o
+  CC      kernel/ptrace.o
+  LD      security/built-in.o
+  CC      mm/vmscan.o
+  CC      crypto/api.o
+  CC      fs/namei.o
+  CC      kernel/timer.o
+  CC      crypto/cipher.o
+  CC      kernel/user.o
+  CC      crypto/digest.o
+  CC      kernel/signal.o
+  CC      crypto/compress.o
+  CC      crypto/algapi.o
+  CC      mm/shmem.o
+  CC      fs/fcntl.o
+  CC      crypto/scatterwalk.o
+  CC      fs/ioctl.o
+  CC      crypto/proc.o
+  CC      kernel/sys.o
+  CC      fs/readdir.o
+  CC      crypto/ablkcipher.o
+  CC      mm/prio_tree.o
+  CC      fs/select.o
+  CC      mm/util.o
+  CC      crypto/blkcipher.o
+  CC      mm/mmzone.o
+  CC      kernel/kmod.o
+  CC      mm/vmstat.o
+  CC      fs/fifo.o
+  CC      crypto/hash.o
+  CC      fs/dcache.o
+  CC      kernel/workqueue.o
+  CC      crypto/ahash.o
+  CC      mm/backing-dev.o
+  CC      mm/page_isolation.o
+  CC      crypto/shash.o
+  CC      kernel/pid.o
+  CC      mm/mm_init.o
+  CC      mm/fremap.o
+  CC      crypto/algboss.o
+  CC      mm/highmem.o
+  CC      fs/inode.o
+  CC      kernel/rcupdate.o
+  CC      crypto/testmgr.o
+  CC      mm/madvise.o
+  CC      kernel/extable.o
+  CC      kernel/params.o
+  CC      mm/memory.o
+  CC      fs/attr.o
+  CC      kernel/posix-timers.o
+  CC      fs/bad_inode.o
+  CC      crypto/aead.o
+  CC      fs/file.o
+  CC      kernel/kthread.o
+  LD      crypto/crypto_blkcipher.o
+  CC      crypto/chainiv.o
+  CC      fs/filesystems.o
+  CC      kernel/wait.o
+  CC      mm/mincore.o
+  CC      crypto/eseqiv.o
+  CC      fs/namespace.o
+  CC      mm/mlock.o
+  CC      kernel/kfifo.o
+  LD      crypto/crypto_hash.o
+  LD      crypto/cryptomgr.o
+  CC      crypto/hmac.o
+  CC      kernel/sys_ni.o
+  CC      kernel/posix-cpu-timers.o
+  CC      mm/mmap.o
+  CC      crypto/md5.o
+  CC      crypto/sha1_generic.o
+  CC      crypto/ecb.o
+  CC      kernel/mutex.o
+  CC      fs/seq_file.o
+  CC      crypto/cbc.o
+  CC      crypto/des_generic.o
+  CC      mm/mprotect.o
+  CC      kernel/hrtimer.o
+  CC      fs/xattr.o
+  CC      mm/mremap.o
+  CC      fs/libfs.o
+  CC      crypto/aes_generic.o
+  CC      mm/msync.o
+  CC      kernel/rwsem.o
+  CC      mm/rmap.o
+  CC      kernel/nsproxy.o
+  CC      fs/fs-writeback.o
+  CC      kernel/srcu.o
+  CC      kernel/semaphore.o
+  CC      fs/pnode.o
+  CC      mm/vmalloc.o
+  CC      crypto/arc4.o
+  CC      kernel/notifier.o
+  CC      crypto/deflate.o
+  CC      fs/drop_caches.o
+  CC      kernel/ksysfs.o
+  CC      fs/splice.o
+  CC      crypto/authenc.o
+  CC      kernel/pm_qos_params.o
+  CC      mm/pagewalk.o
+  CC      kernel/sched_clock.o
+  CC      crypto/rng.o
+  CC      kernel/cred.o
+  CC      mm/bounce.o
+  CC      crypto/krng.o
+  LD      crypto/crypto.o
+  LD      crypto/crypto_algapi.o
+  LD      crypto/built-in.o
+  CC      mm/page_io.o
+  CC      fs/sync.o
+  CC      fs/utimes.o
+  CC      kernel/async.o
+  CC      mm/swap_state.o
+  CC      fs/stack.o
+  CC      fs/buffer.o
+  CC      kernel/freezer.o
+  CC      kernel/irq/handle.o
+  CC      mm/swapfile.o
+  CC      fs/bio.o
+  CC      kernel/irq/manage.o
+  CC      kernel/irq/spurious.o
+  CC      kernel/irq/resend.o
+  CC      fs/block_dev.o
+  CC      kernel/irq/chip.o
+  CC      mm/thrash.o
+  CC      mm/dmapool.o
+  CC      kernel/irq/devres.o
+  CC      fs/direct-io.o
+  CC      kernel/irq/autoprobe.o
+  CC      block/elevator.o
+  CC      mm/ashmem.o
+  CC      kernel/irq/proc.o
+  LD      kernel/irq/built-in.o
+  CC      kernel/power/main.o
+  CC      fs/mpage.o
+  CC      mm/slab.o
+kernel/power/main.c: In function 'state_store':
+kernel/power/main.c:563: warning: initialization discards qualifiers from pointer target type
+  CC      block/blk-core.o
+  CC      kernel/power/console.o
+  CC      fs/ioprio.o
+  CC      kernel/power/process.o
+  CC      kernel/power/wakelock.o
+  LD      fs/cifs/built-in.o
+  CC [M]  fs/cifs/cifsfs.o
+kernel/power/wakelock.c: In function 'print_active_locks':
+kernel/power/wakelock.c:228: warning: unused variable 'irqflags'
+  LD      mm/built-in.o
+  CC      kernel/power/userwakelock.o
+  CC      block/blk-tag.o
+  CC      kernel/time/timekeeping.o
+  CC [M]  fs/cifs/cifssmb.o
+  CC      kernel/power/earlysuspend.o
+  CC      block/blk-sysfs.o
+  CC      kernel/power/fbearlysuspend.o
+  CC      kernel/time/ntp.o
+  CC      block/blk-barrier.o
+  LD      kernel/power/built-in.o
+  CC      block/blk-settings.o
+  CC      kernel/time/clocksource.o
+  CC      block/blk-ioc.o
+  CC      block/blk-map.o
+  CC      kernel/time/jiffies.o
+  CC      kernel/time/timer_list.o
+  CC [M]  fs/cifs/cifs_debug.o
+  CC      block/blk-exec.o
+  CC      block/blk-merge.o
+  CC      kernel/time/clockevents.o
+  CC      kernel/time/tick-common.o
+  CC      fs/cramfs/inode.o
+  CC      block/blk-softirq.o
+  CC      kernel/time/tick-oneshot.o
+  CC      block/blk-timeout.o
+  CC      kernel/time/tick-sched.o
+  CC      fs/cramfs/uncompress.o
+  LD      fs/cramfs/cramfs.o
+  LD      fs/cramfs/built-in.o
+  CC      fs/devpts/inode.o
+  CC      block/ioctl.o
+  LD      kernel/time/built-in.o
+  CC      kernel/mutex-debug.o
+  LD      fs/devpts/devpts.o
+  LD      fs/devpts/built-in.o
+  CC      kernel/futex.o
+  CC      block/genhd.o
+  CC      block/scsi_ioctl.o
+  CC [M]  fs/cifs/connect.o
+  CC      block/cmd-filter.o
+  CC      kernel/rtmutex.o
+  CC      block/noop-iosched.o
+  CC [M]  fs/cifs/dir.o
+  CC      block/as-iosched.o
+  CC      kernel/up.o
+  CC      kernel/uid16.o
+  CC      kernel/module.o
+  CC      block/deadline-iosched.o
+kernel/module.c: In function 'load_module':
+kernel/module.c:2291: warning: label 'free_init' defined but not used
+  CC      kernel/kallsyms.o
+  CC      block/cfq-iosched.o
+  CC      fs/ext2/balloc.o
+  CC      fs/ext2/dir.o
+  CC [M]  fs/cifs/file.o
+  GZIP    kernel/config_data.gz
+  CC      kernel/softlockup.o
+  LD      block/built-in.o
+  CC [M]  fs/cifs/inode.o
+  CC      kernel/rcuclassic.o
+  CC      fs/ext2/file.o
+  CC      kernel/utsname_sysctl.o
+  CC      fs/ext2/fsync.o
+  CC      kernel/dma-coherent.o
+  CC      fs/ext2/ialloc.o
+  CC      kernel/time.o
+  CC      fs/ext2/inode.o
+  IKCFG   kernel/config_data.h
+  CC      kernel/configs.o
+  CC [M]  fs/cifs/link.o
+  CC [M]  fs/cifs/misc.o
+  LD      kernel/built-in.o
+  CC [M]  fs/cifs/netmisc.o
+  CC      fs/ext2/ioctl.o
+  CC [M]  fs/cifs/smbdes.o
+  LD      drivers/auxdisplay/built-in.o
+  CC      fs/ext2/namei.o
+  CC      drivers/base/core.o
+  CC      fs/ext3/balloc.o
+  CC [M]  fs/cifs/smbencrypt.o
+  CC      fs/ext2/super.o
+  CC [M]  fs/cifs/transport.o
+  CC      fs/ext3/bitmap.o
+  CC      drivers/base/sys.o
+  CC      fs/ext3/dir.o
+  CC      drivers/base/bus.o
+  CC      fs/ext2/symlink.o
+  CC [M]  fs/cifs/asn1.o
+  LD      fs/ext2/ext2.o
+  LD      fs/ext2/built-in.o
+  CC [M]  fs/cifs/md4.o
+  CC      fs/ext3/file.o
+  CC      fs/ext3/fsync.o
+  CC      drivers/base/dd.o
+  CC [M]  fs/cifs/md5.o
+  CC      drivers/block/brd.o
+  CC      fs/ext3/ialloc.o
+  CC [M]  fs/cifs/cifs_unicode.o
+  CC      drivers/base/driver.o
+  CC      drivers/base/class.o
+  CC      drivers/block/loop.o
+  CC [M]  fs/cifs/nterr.o
+  CC      fs/ext3/inode.o
+  CC [M]  fs/cifs/xattr.o
+  CC      drivers/base/platform.o
+  CC [M]  fs/cifs/cifsencrypt.o
+  CC      drivers/base/cpu.o
+  CC      drivers/base/firmware.o
+  LD      drivers/block/built-in.o
+  CC      drivers/bluetooth/hci_vhci.o
+  CC [M]  fs/cifs/readdir.o
+  CC      drivers/base/init.o
+  CC      drivers/base/map.o
+  CC      drivers/base/devres.o
+  CC      drivers/bluetooth/hci_ldisc.o
+  CC      drivers/base/attribute_container.o
+  CC      fs/ext3/ioctl.o
+  CC      drivers/bluetooth/hci_h4.o
+  CC [M]  fs/cifs/ioctl.o
+  CC      drivers/base/transport_class.o
+  CC      fs/ext3/namei.o
+  CC      drivers/base/power/sysfs.o
+  CC [M]  fs/cifs/sess.o
+  CC      drivers/base/power/main.o
+  LD      drivers/bluetooth/hci_uart.o
+  LD      drivers/bluetooth/built-in.o
+  CC [M]  fs/cifs/export.o
+  CC      drivers/base/dma-mapping.o
+  LD      drivers/base/power/built-in.o
+  CC [M]  fs/cifs/cifsacl.o
+  CC      drivers/base/firmware_class.o
+  CC      fs/ext3/super.o
+  LD [M]  fs/cifs/cifs.o
+  CC      drivers/base/module.o
+  LD      drivers/base/built-in.o
+  CC      sound/sound_core.o
+  LD      drivers/cdrom/built-in.o
+  CC      drivers/char/mem.o
+  CC      drivers/char/random.o
+  LD      sound/arm/built-in.o
+  CC      sound/core/memalloc.o
+  LD      sound/drivers/mpu401/built-in.o
+  LD      sound/drivers/opl3/built-in.o
+  LD      sound/drivers/opl4/built-in.o
+  LD      sound/drivers/pcsp/built-in.o
+  LD      sound/drivers/vx/built-in.o
+  LD      sound/drivers/built-in.o
+  CC      fs/ext4/balloc.o
+  CC      sound/core/sgbuf.o
+  CC      drivers/char/tty_io.o
+  CC      sound/core/pcm.o
+  CC      fs/ext3/symlink.o
+  CC      fs/ext3/hash.o
+  CC      fs/ext4/bitmap.o
+  CC      fs/ext4/dir.o
+  CC      fs/ext3/resize.o
+  CC      sound/core/pcm_native.o
+  CC      fs/ext4/file.o
+  CC      drivers/char/n_tty.o
+  CC      fs/ext4/fsync.o
+  CC      fs/ext3/ext3_jbd.o
+  CC      fs/ext4/ialloc.o
+  CC      fs/ext3/xattr.o
+  CC      drivers/char/tty_ioctl.o
+  CC      fs/ext4/inode.o
+  CC      sound/core/pcm_lib.o
+  CC      fs/ext3/xattr_user.o
+sound/core/pcm_lib.c: In function 'snd_pcm_lib_write':
+sound/core/pcm_lib.c:1780: warning: unused variable 'ret'
+  CC      fs/ext3/xattr_trusted.o
+  LD      fs/ext3/ext3.o
+  LD      fs/ext3/built-in.o
+  CC      sound/core/pcm_timer.o
+  CC      drivers/char/tty_ldisc.o
+  CC      drivers/char/tty_buffer.o
+  CC      fs/fat/cache.o
+  CC      drivers/char/tty_port.o
+  CC      sound/core/pcm_misc.o
+  CC      fs/fat/dir.o
+  CC      drivers/char/pty.o
+  CC      sound/core/pcm_memory.o
+  CC      sound/core/timer.o
+  CC      drivers/char/misc.o
+  CC      fs/ext4/ioctl.o
+  CC      drivers/char/vt_ioctl.o
+  CC      fs/fat/fatent.o
+  CC      fs/ext4/namei.o
+  CC      sound/core/sound.o
+  CC      fs/fat/file.o
+  CC      drivers/char/vc_screen.o
+  CC      sound/core/init.o
+  CC      fs/fat/inode.o
+  CC      drivers/char/selection.o
+  CC      sound/core/memory.o
+  CC      sound/core/info.o
+  CC      drivers/char/keyboard.o
+  CC      fs/ext4/super.o
+drivers/char/keyboard.c:1126:2: warning: #warning "Cannot generate rawmode keyboard for your architecture yet."
+  CC      fs/fat/misc.o
+  CC      sound/core/control.o
+  CC      drivers/char/consolemap.o
+  CC      fs/fat/namei_msdos.o
+  CONMK   drivers/char/consolemap_deftbl.c
+  CC      drivers/char/vt.o
+  CC      fs/fat/namei_vfat.o
+  CC      sound/core/misc.o
+  CC      sound/core/device.o
+  CC      fs/ext4/symlink.o
+  CC      sound/core/sound_oss.o
+  CC      fs/ext4/hash.o
+  LD      fs/fat/fat.o
+  LD      fs/fat/vfat.o
+  LD      fs/fat/msdos.o
+  LD      fs/fat/built-in.o
+  CC      sound/core/info_oss.o
+  CC      sound/core/oss/mixer_oss.o
+  CC      fs/ext4/resize.o
+  CC      sound/core/oss/pcm_oss.o
+  LD      firmware/built-in.o
+  SHIPPED drivers/char/defkeymap.c
+  CC      fs/ext4/extents.o
+  LD      sound/i2c/other/built-in.o
+  LD      sound/i2c/built-in.o
+  CC      sound/core/oss/pcm_plugin.o
+  CC      net/socket.o
+  CC      sound/core/oss/io.o
+  CC      sound/core/oss/copy.o
+  CC      drivers/char/apm-emulation.o
+  CC      sound/core/oss/linear.o
+  CC      fs/ext4/ext4_jbd2.o
+  LD      net/802/built-in.o
+  CC      net/bluetooth/af_bluetooth.o
+  CC      sound/core/oss/mulaw.o
+  CC      fs/ext4/migrate.o
+  CC      drivers/char/hw_random/core.o
+  CC      sound/core/oss/route.o
+  CC      net/bluetooth/hci_core.o
+  CC      fs/ext4/mballoc.o
+  LD      drivers/char/hw_random/rng-core.o
+  LD      drivers/char/hw_random/built-in.o
+  CC      drivers/char/s3c_mem.o
+  CC      sound/core/oss/rate.o
+drivers/char/s3c_mem.c: In function 's3c_mem_mmap':
+drivers/char/s3c_mem.c:185: warning: 'pageFrameNo' may be used uninitialized in this function
+  CC      drivers/char/consolemap_deftbl.o
+  CC      drivers/char/defkeymap.o
+  LD      drivers/char/built-in.o
+  LD      drivers/clocksource/built-in.o
+  CC      drivers/cpufreq/cpufreq.o
+  LD      sound/core/oss/snd-mixer-oss.o
+  LD      sound/core/oss/snd-pcm-oss.o
+  LD      sound/core/oss/built-in.o
+  CC      sound/core/seq/oss/seq_oss.o
+  CC      sound/core/seq/oss/seq_oss_init.o
+  CC      net/bluetooth/hci_conn.o
+  CC      sound/core/seq/oss/seq_oss_timer.o
+  CC      drivers/cpufreq/cpufreq_performance.o
+  CC      drivers/cpufreq/cpufreq_powersave.o
+  CC      sound/core/seq/oss/seq_oss_ioctl.o
+  CC      drivers/cpufreq/cpufreq_userspace.o
+  CC      drivers/cpufreq/cpufreq_ondemand.o
+  CC      sound/core/seq/oss/seq_oss_event.o
+  CC      net/bluetooth/hci_event.o
+  CC      drivers/cpufreq/cpufreq_conservative.o
+  CC      sound/core/seq/oss/seq_oss_rw.o
+  CC      drivers/cpufreq/freq_table.o
+  CC      sound/core/seq/oss/seq_oss_synth.o
+  LD      drivers/cpufreq/built-in.o
+  CC      drivers/cpuidle/cpuidle.o
+  CC      fs/ext4/xattr.o
+  CC      drivers/cpuidle/driver.o
+  CC      sound/core/seq/oss/seq_oss_midi.o
+  CC      drivers/cpuidle/governor.o
+  CC      net/bluetooth/hci_sock.o
+  CC      drivers/cpuidle/sysfs.o
+  CC      sound/core/seq/oss/seq_oss_readq.o
+  CC      drivers/cpuidle/governors/ladder.o
+  CC      fs/ext4/xattr_user.o
+  CC      drivers/cpuidle/governors/menu.o
+  CC      sound/core/seq/oss/seq_oss_writeq.o
+  CC      net/bluetooth/hci_sysfs.o
+  LD      drivers/cpuidle/governors/built-in.o
+  LD      drivers/cpuidle/built-in.o
+  LD      drivers/crypto/built-in.o
+  LD      drivers/firmware/built-in.o
+  CC      drivers/gpio/gpiolib.o
+  CC      fs/ext4/xattr_trusted.o
+  LD      sound/core/seq/oss/snd-seq-oss.o
+  LD      sound/core/seq/oss/built-in.o
+  CC      sound/core/seq/seq_device.o
+  LD      fs/ext4/ext4.o
+  LD      fs/ext4/built-in.o
+  CC      fs/jbd/transaction.o
+  LD      drivers/gpio/built-in.o
+  LD      drivers/gpu/drm/built-in.o
+  LD      drivers/gpu/built-in.o
+  CC      drivers/hid/hid-core.o
+  CC      net/bluetooth/lib.o
+  CC      sound/core/seq/seq_midi_event.o
+  CC      net/bluetooth/l2cap.o
+  CC      sound/core/seq/seq.o
+  CC      fs/jbd/commit.o
+  CC      sound/core/seq/seq_lock.o
+  CC      sound/core/seq/seq_clientmgr.o
+  CC      drivers/hid/hid-input.o
+  CC      fs/jbd/recovery.o
+  CC      fs/jbd/checkpoint.o
+  CC      net/bluetooth/sco.o
+  CC      fs/jbd/revoke.o
+  CC      sound/core/seq/seq_memory.o
+  CC [M]  drivers/hid/hid-dummy.o
+  LD      drivers/hid/hid.o
+  LD      drivers/hid/built-in.o
+  CC      drivers/hwmon/hwmon.o
+  CC      fs/jbd/journal.o
+  CC      sound/core/seq/seq_queue.o
+  LD      drivers/hwmon/built-in.o
+  CC      drivers/i2c/i2c-boardinfo.o
+  CC      net/bluetooth/bnep/core.o
+  CC      drivers/i2c/i2c-core.o
+drivers/i2c/i2c-core.c: In function 'i2c_new_device':
+drivers/i2c/i2c-core.c:283: warning: 'i2c_attach_client' is deprecated (declared at include/linux/i2c.h:434)
+drivers/i2c/i2c-core.c: In function 'i2c_del_adapter':
+drivers/i2c/i2c-core.c:646: warning: 'detach_client' is deprecated (declared at include/linux/i2c.h:154)
+drivers/i2c/i2c-core.c: In function 'i2c_register_driver':
+drivers/i2c/i2c-core.c:713: warning: 'detach_client' is deprecated (declared at include/linux/i2c.h:154)
+drivers/i2c/i2c-core.c: In function '__detach_adapter':
+drivers/i2c/i2c-core.c:780: warning: 'detach_client' is deprecated (declared at include/linux/i2c.h:154)
+drivers/i2c/i2c-core.c: At top level:
+drivers/i2c/i2c-core.c:876: warning: 'i2c_attach_client' is deprecated (declared at drivers/i2c/i2c-core.c:827)
+drivers/i2c/i2c-core.c:876: warning: 'i2c_attach_client' is deprecated (declared at drivers/i2c/i2c-core.c:827)
+drivers/i2c/i2c-core.c:904: warning: 'i2c_detach_client' is deprecated (declared at drivers/i2c/i2c-core.c:879)
+drivers/i2c/i2c-core.c:904: warning: 'i2c_detach_client' is deprecated (declared at drivers/i2c/i2c-core.c:879)
+  CC      sound/core/seq/seq_fifo.o
+  CC      net/bluetooth/bnep/sock.o
+  LD      fs/jbd/jbd.o
+  LD      fs/jbd/built-in.o
+  CC      sound/core/seq/seq_prioq.o
+  CC      fs/jbd2/transaction.o
+  CC      net/bluetooth/bnep/netdev.o
+  CC      drivers/i2c/i2c-dev.o
+  CC      sound/core/seq/seq_timer.o
+  LD      net/bluetooth/bnep/bnep.o
+  LD      net/bluetooth/bnep/built-in.o
+  CC      net/bluetooth/rfcomm/core.o
+  CC      drivers/i2c/algos/i2c-algo-bit.o
+  CC      sound/core/seq/seq_system.o
+  CC      fs/jbd2/commit.o
+  CC      sound/core/seq/seq_ports.o
+  LD      drivers/i2c/algos/built-in.o
+  CC      drivers/i2c/busses/i2c-gpio.o
+  CC      drivers/i2c/busses/i2c-s3c.o
+  CC      sound/core/seq/seq_info.o
+  CC      fs/jbd2/recovery.o
+  LD      sound/core/seq/snd-seq.o
+  LD      sound/core/seq/snd-seq-device.o
+  LD      sound/core/seq/snd-seq-midi-event.o
+  LD      sound/core/seq/built-in.o
+  LD      sound/core/snd.o
+  LD      sound/core/snd-timer.o
+  LD      sound/core/snd-pcm.o
+  LD      sound/core/snd-page-alloc.o
+  LD      sound/core/built-in.o
+  LD      sound/isa/ad1816a/built-in.o
+  LD      sound/isa/ad1848/built-in.o
+  LD      sound/isa/cs423x/built-in.o
+  LD      sound/isa/es1688/built-in.o
+  LD      sound/isa/gus/built-in.o
+  LD      sound/isa/opti9xx/built-in.o
+  LD      sound/isa/sb/built-in.o
+  LD      sound/isa/wavefront/built-in.o
+  LD      sound/isa/wss/built-in.o
+  LD      sound/isa/built-in.o
+  LD      sound/mips/built-in.o
+  LD      sound/parisc/built-in.o
+  LD      drivers/i2c/busses/built-in.o
+  LD      sound/pci/ac97/built-in.o
+  CC      drivers/i2c/chips/max8698.o
+  LD      sound/pci/ali5451/built-in.o
+  LD      sound/pci/au88x0/built-in.o
+  LD      sound/pci/aw2/built-in.o
+  LD      sound/pci/ca0106/built-in.o
+  LD      sound/pci/cs46xx/built-in.o
+  LD      sound/pci/cs5535audio/built-in.o
+  LD      sound/pci/echoaudio/built-in.o
+  LD      sound/pci/emu10k1/built-in.o
+  LD      sound/pci/hda/built-in.o
+  LD      sound/pci/ice1712/built-in.o
+  LD      sound/pci/korg1212/built-in.o
+  LD      sound/pci/mixart/built-in.o
+  LD      sound/pci/nm256/built-in.o
+  LD      sound/pci/oxygen/built-in.o
+  LD      sound/pci/pcxhr/built-in.o
+  CC      fs/jbd2/checkpoint.o
+  LD      sound/pci/riptide/built-in.o
+  LD      sound/pci/rme9652/built-in.o
+  LD      sound/pci/trident/built-in.o
+drivers/i2c/chips/max8698.c: In function 'max8698_attach':
+drivers/i2c/chips/max8698.c:527: warning: 'i2c_attach_client' is deprecated (declared at include/linux/i2c.h:434)
+drivers/i2c/chips/max8698.c: In function 'max8698_detach_client':
+drivers/i2c/chips/max8698.c:543: warning: 'i2c_detach_client' is deprecated (declared at include/linux/i2c.h:435)
+  LD      sound/pci/vx222/built-in.o
+  LD      sound/pci/ymfpci/built-in.o
+  LD      sound/pci/built-in.o
+  CC      net/bluetooth/rfcomm/sock.o
+  LD      sound/pcmcia/pdaudiocf/built-in.o
+  LD      sound/pcmcia/vx/built-in.o
+  LD      sound/pcmcia/built-in.o
+  LD      sound/ppc/built-in.o
+  LD      sound/sh/built-in.o
+  CC      sound/soc/soc-core.o
+  LD      drivers/i2c/chips/built-in.o
+  LD      drivers/i2c/built-in.o
+  LD      drivers/idle/built-in.o
+  LD      drivers/ieee1394/built-in.o
+  CC      drivers/input/input.o
+sound/soc/soc-core.c:970: warning: 'soc_shutdown' defined but not used
+  CC      fs/jbd2/revoke.o
+  CC      fs/jbd2/journal.o
+  CC      net/bluetooth/rfcomm/tty.o
+  CC      drivers/input/input-compat.o
+  CC      sound/soc/soc-dapm.o
+  CC      drivers/input/ff-core.o
+  CC      drivers/input/mousedev.o
+  LD      net/bluetooth/rfcomm/rfcomm.o
+  LD      net/bluetooth/rfcomm/built-in.o
+  LD      net/bluetooth/bluetooth.o
+  LD      net/bluetooth/built-in.o
+  CC      net/core/sock.o
+  LD      fs/jbd2/jbd2.o
+  LD      fs/jbd2/built-in.o
+  CC      fs/nls/nls_base.o
+  CC      fs/nls/nls_cp437.o
+  LD      sound/soc/atmel/built-in.o
+  LD      sound/soc/au1x/built-in.o
+  LD      sound/soc/blackfin/built-in.o
+  CC      sound/soc/codecs/ak4671.o
+  CC      fs/nls/nls_cp866.o
+  CC      drivers/input/evdev.o
+  CC      fs/nls/nls_ascii.o
+sound/soc/codecs/ak4671.c:46:5: warning: "AUDIO_SPECIFIC_DEBUG" is not defined
+sound/soc/codecs/ak4671.c: In function 'ak4671_set_voice_call_auto_response_mode':
+sound/soc/codecs/ak4671.c:267: warning: format '%d' expects type 'int', but argument 3 has type 'long int'
+sound/soc/codecs/ak4671.c: In function 'ak4671_set_voice_call_rec_mode':
+sound/soc/codecs/ak4671.c:298: warning: format '%d' expects type 'int', but argument 3 has type 'long int'
+sound/soc/codecs/ak4671.c: In function 'ak4671_mute':
+sound/soc/codecs/ak4671.c:610: warning: ISO C90 forbids mixed declarations and code
+sound/soc/codecs/ak4671.c: In function 'ak4671_codec_probe':
+sound/soc/codecs/ak4671.c:961: warning: 'i2c_attach_client' is deprecated (declared at include/linux/i2c.h:434)
+sound/soc/codecs/ak4671.c: In function 'ak4671_i2c_detach':
+sound/soc/codecs/ak4671.c:1000: warning: 'i2c_detach_client' is deprecated (declared at include/linux/i2c.h:435)
+  CC      fs/nls/nls_iso8859-1.o
+  CC      fs/nls/nls_utf8.o
+  LD      fs/nls/built-in.o
+  CC      fs/notify/dnotify/dnotify.o
+  CC      sound/soc/codecs/ak4671_spica.o
+  CC      drivers/input/keyboard/s3c-keypad.o
+  LD      fs/notify/dnotify/built-in.o
+  CC      fs/notify/inotify/inotify.o
+sound/soc/codecs/ak4671_spica.c:42:5: warning: "AUDIO_SPECIFIC_DEBUG" is not defined
+sound/soc/codecs/ak4671_spica.c:76: warning: function declaration isn't a prototype
+sound/soc/codecs/ak4671_spica.c:129:5: warning: "MAX9877_SPECIFIC_DEBUG" is not defined
+sound/soc/codecs/ak4671_spica.c: In function 'max9877_codec_probe':
+sound/soc/codecs/ak4671_spica.c:137: warning: 'i2c_attach_client' is deprecated (declared at include/linux/i2c.h:434)
+sound/soc/codecs/ak4671_spica.c:153:5: warning: "MAX9877_SPECIFIC_DEBUG" is not defined
+sound/soc/codecs/ak4671_spica.c: In function 'max9877_i2c_detach':
+sound/soc/codecs/ak4671_spica.c:173: warning: 'i2c_detach_client' is deprecated (declared at include/linux/i2c.h:435)
+sound/soc/codecs/ak4671_spica.c:289:5: warning: "MAX9877_SPECIFIC_DEBUG" is not defined
+sound/soc/codecs/ak4671_spica.c:323:5: warning: "MAX9877_SPECIFIC_DEBUG" is not defined
+sound/soc/codecs/ak4671_spica.c: In function 'amp_set_path':
+sound/soc/codecs/ak4671_spica.c:287: warning: unused variable 'i'
+  CC      net/core/request_sock.o
+  LD      drivers/input/keyboard/built-in.o
+  CC      drivers/input/misc/uinput.o
+  CC      net/core/skbuff.o
+  CC      fs/notify/inotify/inotify_user.o
+sound/soc/codecs/ak4671_spica.c: In function 'amp_register_string':
+sound/soc/codecs/ak4671_spica.c:344: warning: 'pData' may be used uninitialized in this function
+  LD      sound/soc/codecs/snd-soc-ak4671-spica.o
+  LD      sound/soc/codecs/built-in.o
+  LD      sound/soc/davinci/built-in.o
+  LD      sound/soc/fsl/built-in.o
+  LD      sound/soc/omap/built-in.o
+  LD      sound/soc/pxa/built-in.o
+  CC      sound/soc/s3c64xx/s3c-pcm-sol.o
+arch/arm/plat-s3c64xx/include/plat/s3c6410-dma.h:260: warning: 's3c6410_dmac_sel' defined but not used
+  LD      drivers/input/misc/built-in.o
+  LD      fs/notify/inotify/built-in.o
+  LD      fs/notify/built-in.o
+  CC      drivers/input/touchscreen/qt5480.o
+  CC      fs/partitions/check.o
+drivers/input/touchscreen/qt5480.c: In function 'qt5480_attach':
+drivers/input/touchscreen/qt5480.c:2446: warning: 'i2c_attach_client' is deprecated (declared at include/linux/i2c.h:434)
+drivers/input/touchscreen/qt5480.c: At top level:
+drivers/input/touchscreen/qt5480.c:2655: warning: initialization from incompatible pointer type
+drivers/input/touchscreen/qt5480.c:2656: warning: initialization from incompatible pointer type
+drivers/input/touchscreen/qt5480.c:2657: warning: initialization from incompatible pointer type
+drivers/input/touchscreen/qt5480.c:2658: warning: initialization from incompatible pointer type
+  CC      sound/soc/s3c64xx/s3c6410-i2s.o
+fs/partitions/check.c:307: warning: 'struct kobj_uvent_env' declared inside parameter list
+fs/partitions/check.c:307: warning: its scope is only this definition or declaration, which is probably not what you want
+fs/partitions/check.c: In function 'part_uevent':
+fs/partitions/check.c:312: warning: passing argument 1 of 'add_uevent_var' from incompatible pointer type
+fs/partitions/check.c:309: warning: unused variable 'disk'
+fs/partitions/check.c: At top level:
+fs/partitions/check.c:320: warning: initialization from incompatible pointer type
+arch/arm/plat-s3c64xx/include/plat/s3c6410-dma.h:260: warning: 's3c6410_dmac_sel' defined but not used
+  CC      fs/partitions/msdos.o
+  CC      sound/soc/s3c64xx/s3c6410-ak4671.o
+sound/soc/s3c64xx/s3c6410-ak4671.c: In function 'android_hifi_hw_params':
+sound/soc/s3c64xx/s3c6410-ak4671.c:113: warning: unused variable 'epll_con0'
+sound/soc/s3c64xx/s3c6410-ak4671.c:110: warning: unused variable 'bclk'
+  LD      fs/partitions/built-in.o
+  CC      fs/proc/mmu.o
+  LD      sound/soc/s3c64xx/snd-soc-ak4671.o
+  LD      sound/soc/s3c64xx/built-in.o
+  LD      sound/soc/sh/built-in.o
+  LD      sound/soc/snd-soc-core.o
+  LD      drivers/input/touchscreen/built-in.o
+  LD      drivers/input/input-core.o
+  LD      sound/soc/built-in.o
+  LD      drivers/input/built-in.o
+  LD      sound/sparc/built-in.o
+  CC      drivers/input/serio/serio.o
+  CC      fs/proc/task_mmu.o
+  LD      sound/spi/built-in.o
+  LD      sound/synth/emux/built-in.o
+  LD      sound/synth/built-in.o
+  LD      sound/usb/caiaq/built-in.o
+  LD      sound/usb/usx2y/built-in.o
+  LD      sound/usb/built-in.o
+  CC      sound/last.o
+  CC      net/core/iovec.o
+  LD      sound/soundcore.o
+  LD      sound/built-in.o
+  CC      drivers/input/serio/serport.o
+  CC      net/core/datagram.o
+  CC      fs/proc/inode.o
+  CC      net/core/stream.o
+  LD      drivers/input/serio/built-in.o
+  CC      drivers/leds/led-core.o
+  CC      drivers/leds/led-class.o
+  LD      drivers/leds/built-in.o
+  LD      drivers/lguest/built-in.o
+  CC      fs/proc/root.o
+  LD      drivers/macintosh/built-in.o
+  CC      drivers/media/common/tuners/tuner-xc2028.o
+  CC      net/core/scm.o
+  CC      net/ethernet/eth.o
+  CC      fs/proc/base.o
+  CC      net/core/gen_stats.o
+  LD      net/ethernet/built-in.o
+  CC      net/core/gen_estimator.o
+  LD      arch/arm/lib/built-in.o
+  AS      arch/arm/lib/ashldi3.o
+  AS      arch/arm/lib/ashrdi3.o
+  AS      arch/arm/lib/backtrace.o
+  AS      arch/arm/lib/changebit.o
+  AS      arch/arm/lib/clear_user.o
+  AS      arch/arm/lib/clearbit.o
+  CC      net/core/net_namespace.o
+  AS      arch/arm/lib/copy_from_user.o
+  AS      arch/arm/lib/copy_page.o
+  AS      arch/arm/lib/copy_to_user.o
+  AS      arch/arm/lib/csumipv6.o
+  AS      arch/arm/lib/csumpartial.o
+  AS      arch/arm/lib/csumpartialcopy.o
+  AS      arch/arm/lib/csumpartialcopyuser.o
+  AS      arch/arm/lib/delay.o
+  AS      arch/arm/lib/div64.o
+  CC      drivers/media/common/tuners/tuner-simple.o
+  AS      arch/arm/lib/findbit.o
+  AS      arch/arm/lib/getuser.o
+  AS      arch/arm/lib/io-readsb.o
+  AS      arch/arm/lib/io-readsl.o
+  AS      arch/arm/lib/io-readsw-armv4.o
+  AS      arch/arm/lib/io-writesb.o
+  AS      arch/arm/lib/io-writesl.o
+  AS      arch/arm/lib/io-writesw-armv4.o
+  AS      arch/arm/lib/lib1funcs.o
+  CC      net/core/sysctl_net_core.o
+  AS      arch/arm/lib/lshrdi3.o
+  AS      arch/arm/lib/memchr.o
+  AS      arch/arm/lib/memcpy.o
+  AS      arch/arm/lib/memmove.o
+  AS      arch/arm/lib/memset.o
+  AS      arch/arm/lib/memzero.o
+  AS      arch/arm/lib/muldi3.o
+  AS      arch/arm/lib/putuser.o
+  AS      arch/arm/lib/setbit.o
+  AS      arch/arm/lib/sha1.o
+  CC      fs/proc/generic.o
+  AS      arch/arm/lib/strchr.o
+  AS      arch/arm/lib/strncpy_from_user.o
+  AS      arch/arm/lib/strnlen_user.o
+  AS      arch/arm/lib/strrchr.o
+  AS      arch/arm/lib/testchangebit.o
+  CC      net/core/skb_dma_map.o
+  AS      arch/arm/lib/testclearbit.o
+  AS      arch/arm/lib/testsetbit.o
+  AS      arch/arm/lib/ucmpdi2.o
+  AR      arch/arm/lib/lib.a
+  CC      net/ipv4/route.o
+  CC      net/core/dev.o
+  CC      drivers/media/common/tuners/tuner-types.o
+  CC      fs/proc/array.o
+  CC      drivers/media/common/tuners/mt20xx.o
+  CC      fs/proc/proc_tty.o
+  CC      fs/proc/cmdline.o
+  CC      drivers/media/common/tuners/tda8290.o
+  CC      fs/proc/cpuinfo.o
+  CC      fs/proc/devices.o
+  CC      fs/proc/interrupts.o
+  CC      fs/proc/loadavg.o
+  CC      fs/proc/meminfo.o
+  CC      drivers/media/common/tuners/tea5767.o
+  CC      net/ipv4/inetpeer.o
+  CC      fs/proc/stat.o
+  CC      fs/proc/uptime.o
+  CC      drivers/media/common/tuners/tea5761.o
+  CC      net/core/ethtool.o
+  CC      net/ipv4/protocol.o
+  CC      fs/proc/version.o
+  CC      fs/proc/proc_sysctl.o
+  CC      drivers/media/common/tuners/tda9887.o
+  CC      net/ipv4/ip_input.o
+  CC      fs/proc/proc_net.o
+  CC      drivers/media/common/tuners/xc5000.o
+  CC      net/ipv4/ip_fragment.o
+  CC      net/core/dev_mcast.o
+  CC      fs/proc/kmsg.o
+  CC      fs/proc/page.o
+  CC      net/core/dst.o
+  LD      drivers/media/common/tuners/built-in.o
+  LD      drivers/media/common/built-in.o
+  LD      drivers/media/radio/built-in.o
+  LD      fs/proc/proc.o
+  CC      drivers/media/video/v4l2-dev.o
+  LD      fs/proc/built-in.o
+  CC      fs/ramfs/inode.o
+  CC      net/ipv4/ip_forward.o
+  CC      fs/ramfs/file-mmu.o
+  CC      net/core/netevent.o
+  CC      drivers/media/video/v4l2-ioctl.o
+  LD      fs/ramfs/ramfs.o
+  LD      fs/ramfs/built-in.o
+  CC      fs/romfs/inode.o
+  CC      net/core/neighbour.o
+  CC      net/ipv4/ip_options.o
+  LD      fs/romfs/romfs.o
+  LD      fs/romfs/built-in.o
+  CC      fs/squashfs/block.o
+  CC      fs/squashfs/cache.o
+  CC      net/ipv4/ip_output.o
+  CC      fs/squashfs/dir.o
+  CC      fs/squashfs/export.o
+  CC      fs/squashfs/file.o
+  CC      drivers/media/video/v4l2-device.o
+  CC      net/core/rtnetlink.o
+  CC      drivers/media/video/v4l2-subdev.o
+  CC      fs/squashfs/fragment.o
+  CC      fs/squashfs/id.o
+  CC      net/ipv4/ip_sockglue.o
+  CC      fs/squashfs/inode.o
+  CC      drivers/media/video/v4l2-int-device.o
+  CC      fs/squashfs/namei.o
+  CC      drivers/media/video/v4l2-common.o
+  CC      fs/squashfs/super.o
+drivers/media/video/v4l2-common.c: In function 'v4l2_i2c_attach':
+drivers/media/video/v4l2-common.c:875: warning: 'i2c_attach_client' is deprecated (declared at include/linux/i2c.h:434)
+  CC      net/core/utils.o
+  CC      fs/squashfs/symlink.o
+  CC      net/ipv4/inet_hashtables.o
+  CC      drivers/media/video/v4l1-compat.o
+  LD      fs/squashfs/squashfs.o
+  LD      fs/squashfs/built-in.o
+  CC      fs/sysfs/inode.o
+  CC      net/core/link_watch.o
+  CC      fs/sysfs/file.o
+  CC      net/core/filter.o
+  CC      net/ipv4/inet_timewait_sock.o
+  CC      fs/sysfs/dir.o
+  LD      drivers/media/video/videodev.o
+  LD      drivers/media/video/built-in.o
+  LD      drivers/media/built-in.o
+  LD      drivers/mfd/built-in.o
+  CC      drivers/misc/pmem.o
+  CC      net/core/flow.o
+  CC      net/ipv4/inet_connection_sock.o
+  CC      fs/sysfs/symlink.o
+  CC      fs/sysfs/mount.o
+  CC      net/core/net-sysfs.o
+  CC      fs/sysfs/bin.o
+  CC      drivers/misc/uid_stat.o
+  CC      net/ipv4/tcp.o
+  LD      drivers/misc/eeprom/built-in.o
+  CC      fs/sysfs/group.o
+  LD      drivers/misc/built-in.o
+  CC      drivers/mmc/card/block.o
+  LD      fs/sysfs/built-in.o
+  CC      fs/eventpoll.o
+  CC      net/core/fib_rules.o
+  CC      drivers/mmc/card/queue.o
+  CC      fs/anon_inodes.o
+  LD      net/core/built-in.o
+  LD      drivers/mmc/card/mmc_block.o
+  LD      drivers/mmc/card/built-in.o
+  CC      drivers/net/Space.o
+  CC      drivers/mmc/core/core.o
+  CC      fs/signalfd.o
+  CC      drivers/net/loopback.o
+  CC      fs/timerfd.o
+  CC      drivers/mmc/core/bus.o
+  LD      drivers/net/arm/built-in.o
+  LD      drivers/net/wireless/built-in.o
+  CC [M]  drivers/net/tun.o
+  CC      fs/eventfd.o
+  CC      net/ipv4/tcp_input.o
+  CC      drivers/mmc/core/host.o
+  CC      fs/aio.o
+  CC      drivers/mmc/core/mmc.o
+  LD      drivers/net/built-in.o
+  CC      net/ipv4/tcp_output.o
+  CC      drivers/mmc/core/mmc_ops.o
+  CC      drivers/mmc/core/sd.o
+  CC      fs/locks.o
+  CC      drivers/mmc/core/sd_ops.o
+  CC      drivers/mmc/core/sdio.o
+  CC      drivers/mmc/core/sdio_ops.o
+  CC      fs/binfmt_script.o
+  CC      lib/bcd.o
+  CC      fs/binfmt_elf.o
+  CC      lib/div64.o
+  CC      drivers/mmc/core/sdio_bus.o
+  CC      lib/sort.o
+  CC      drivers/mmc/core/sdio_cis.o
+  CC      lib/parser.o
+  CC      lib/halfmd4.o
+  CC      lib/debug_locks.o
+  CC      drivers/mmc/core/sdio_io.o
+  CC      lib/random32.o
+  CC      lib/bust_spinlocks.o
+  CC      net/ipv4/tcp_timer.o
+  CC      drivers/mmc/core/sdio_irq.o
+  CC      fs/mbcache.o
+  CC      lib/hexdump.o
+  CC      lib/kasprintf.o
+  LD      drivers/mmc/core/mmc_core.o
+  LD      drivers/mmc/core/built-in.o
+  CC      drivers/mmc/host/sdhci.o
+  CC      lib/bitmap.o
+  LD      fs/built-in.o
+  CC      net/ipv4/tcp_ipv4.o
+  CC      lib/scatterlist.o
+  CC      lib/string_helpers.o
+  CC      net/ipv6/af_inet6.o
+  CC      lib/iomap_copy.o
+  CC      lib/devres.o
+  CC      drivers/mmc/host/sdhci-s3c.o
+  CC      lib/hweight.o
+  CC      lib/plist.o
+  CC      lib/bitrev.o
+  CC      lib/crc16.o
+  LD      drivers/mmc/host/built-in.o
+  LD      drivers/mmc/built-in.o
+  LD      drivers/platform/built-in.o
+  CC      net/ipv6/anycast.o
+  CC      drivers/power/power_supply_core.o
+  HOSTCC  lib/gen_crc32table
+  CC      lib/zlib_deflate/deflate.o
+  CC      net/ipv4/tcp_minisocks.o
+  CC      drivers/power/power_supply_sysfs.o
+  CC      drivers/power/s3c6410_battery.o
+  CC      net/ipv6/ip6_output.o
+  CC      lib/zlib_deflate/deftree.o
+drivers/power/s3c6410_battery.c:537: warning: 'check_recharging_bat' defined but not used
+  CC      net/ipv4/tcp_cong.o
+  CC      net/ipv4/datagram.o
+  LD      drivers/power/power_supply.o
+  LD      drivers/power/built-in.o
+  CC      drivers/rtc/rtc-lib.o
+  CC      lib/zlib_deflate/deflate_syms.o
+  LD      lib/zlib_deflate/zlib_deflate.o
+  LD      lib/zlib_deflate/built-in.o
+  CC      lib/zlib_inflate/inffast.o
+  CC      net/ipv4/raw.o
+  CC      drivers/rtc/hctosys.o
+  CC      lib/zlib_inflate/inflate.o
+  CC      drivers/rtc/class.o
+  CC      net/ipv6/ip6_input.o
+  CC      drivers/rtc/interface.o
+  CC      lib/zlib_inflate/infutil.o
+  CC      net/ipv6/addrconf.o
+  CC      drivers/rtc/alarm.o
+  CC      lib/zlib_inflate/inftrees.o
+  CC      net/ipv4/udp.o
+  CC      lib/zlib_inflate/inflate_syms.o
+  LD      lib/zlib_inflate/zlib_inflate.o
+  LD      lib/zlib_inflate/built-in.o
+  CC      lib/textsearch.o
+  CC      drivers/rtc/rtc-dev.o
+  CC      lib/ts_kmp.o
+  CC      lib/ts_bm.o
+  CC      drivers/rtc/rtc-proc.o
+  CC      lib/ts_fsm.o
+  CC      drivers/rtc/rtc-sysfs.o
+  CC      lib/argv_split.o
+  CC      drivers/rtc/rtc-s3c.o
+  CC      net/ipv4/udplite.o
+  CC      lib/cmdline.o
+drivers/rtc/rtc-s3c.c:92: warning: 'rtc_sync_start' declared inline after being called
+drivers/rtc/rtc-s3c.c:92: warning: previous declaration of 'rtc_sync_start' was here
+drivers/rtc/rtc-s3c.c: In function 's3c_rtc_probe':
+drivers/rtc/rtc-s3c.c:698: warning: passing argument 1 of 's3c_rtc_gettime' from incompatible pointer type
+drivers/rtc/rtc-s3c.c:710: warning: passing argument 1 of 's3c_rtc_settime' from incompatible pointer type
+drivers/rtc/rtc-s3c.c:624: warning: unused variable 'bcd_loop'
+drivers/rtc/rtc-s3c.c:624: warning: unused variable 'bcd_tmp'
+  CC      lib/ctype.o
+  CC      lib/dec_and_lock.o
+  CC      lib/dump_stack.o
+  CC      net/ipv4/arp.o
+  LD      drivers/rtc/rtc-core.o
+  LD      drivers/rtc/built-in.o
+  CC      drivers/sensor/accel/bma020_i2c.o
+  CC      lib/extable.o
+  CC      lib/find_last_bit.o
+drivers/sensor/accel/bma020_i2c.c: In function 'i2c_acc_bma020_probe_client':
+drivers/sensor/accel/bma020_i2c.c:174: warning: 'i2c_attach_client' is deprecated (declared at include/linux/i2c.h:434)
+drivers/sensor/accel/bma020_i2c.c: In function 'i2c_acc_bma020_detach_client':
+drivers/sensor/accel/bma020_i2c.c:192: warning: 'i2c_detach_client' is deprecated (declared at include/linux/i2c.h:435)
+  CC      lib/idr.o
+  CC      drivers/sensor/accel/bma020.o
+In file included from drivers/sensor/accel/bma020.c:2:
+drivers/sensor/accel/bma020.h:828: warning: function declaration isn't a prototype
+drivers/sensor/accel/bma020.c:913: warning: function declaration isn't a prototype
+  CC      net/ipv6/addrlabel.o
+  CC      drivers/sensor/accel/bma020_acc.o
+  CC      lib/int_sqrt.o
+  CC      lib/ioremap.o
+In file included from drivers/sensor/accel/bma020_acc.h:5,
+                 from drivers/sensor/accel/bma020_acc.c:16:
+drivers/sensor/accel/bma020.h:828: warning: function declaration isn't a prototype
+drivers/sensor/accel/bma020_acc.c: In function 'bma020_ioctl':
+drivers/sensor/accel/bma020_acc.c:206: warning: ISO C90 forbids mixed declarations and code
+  CC      net/ipv4/icmp.o
+  LD      drivers/sensor/accel/built-in.o
+  CC      drivers/sensor/compass/ak8973b.o
+  CC      lib/irq_regs.o
+  CC      net/ipv6/route.o
+  CC      lib/is_single_threaded.o
+drivers/sensor/compass/ak8973b.c: In function 'i2c_ak8973b_probe_client':
+drivers/sensor/compass/ak8973b.c:806: warning: 'i2c_attach_client' is deprecated (declared at include/linux/i2c.h:434)
+drivers/sensor/compass/ak8973b.c: In function 'i2c_ak8973b_detach_client':
+drivers/sensor/compass/ak8973b.c:920: warning: 'i2c_detach_client' is deprecated (declared at include/linux/i2c.h:435)
+  CC      lib/klist.o
+  CC      lib/kobject.o
+  LD      drivers/sensor/compass/built-in.o
+  LD      drivers/sensor/built-in.o
+  CC      drivers/serial/serial_core.o
+  CC      net/ipv4/devinet.o
+  CC      lib/kobject_uevent.o
+  CC      lib/kref.o
+  CC      lib/prio_heap.o
+  CC      net/ipv6/ip6_fib.o
+  CC      lib/prio_tree.o
+  CC      net/ipv4/af_inet.o
+  CC      drivers/serial/samsung.o
+  CC      lib/proportions.o
+  CC      lib/radix-tree.o
+  CC      net/ipv6/ipv6_sockglue.o
+  CC      drivers/serial/s3c64xx.o
+  CC      lib/ratelimit.o
+  CC      lib/rbtree.o
+  LD      drivers/serial/built-in.o
+  CC      drivers/staging/staging.o
+  CC      net/ipv4/igmp.o
+  CC      drivers/staging/android/binder.o
+  CC      lib/reciprocal_div.o
+  CC      lib/rwsem-spinlock.o
+  CC      net/ipv6/ndisc.o
+  CC      lib/sha1.o
+  CC      lib/show_mem.o
+  CC      lib/string.o
+  CC      net/ipv4/fib_frontend.o
+  CC      lib/vsprintf.o
+  CC      net/ipv6/udp.o
+  GEN     lib/crc32table.h
+  AR      lib/lib.a
+  CC      lib/crc32.o
+  CC      net/ipv4/fib_semantics.o
+  LD      lib/built-in.o
+  CC      drivers/staging/android/logger.o
+drivers/staging/android/logger.c: In function 'do_write_log':
+drivers/staging/android/logger.c:294: warning: format '%x' expects type 'unsigned int', but argument 3 has type 'unsigned char *'
+  CC      drivers/switch/switch_class.o
+drivers/switch/switch_class.c: In function 'state_store':
+drivers/switch/switch_class.c:73: warning: ISO C90 forbids mixed declarations and code
+drivers/switch/switch_class.c: At top level:
+drivers/switch/switch_class.c:119: warning: initialization from incompatible pointer type
+drivers/switch/switch_class.c: In function 'state_store':
+drivers/switch/switch_class.c:116: warning: control reaches end of non-void function
+  CC      net/ipv4/inet_fragment.o
+  LD      drivers/switch/built-in.o
+  CC      drivers/usb/gadget/s3c-udc-otg-hs.o
+  CC      net/ipv6/udplite.o
+  CC      drivers/staging/android/timed_output.o
+  CC      net/ipv4/sysctl_net_ipv4.o
+  CC      drivers/staging/android/timed_gpio.o
+  CC      net/ipv6/raw.o
+In file included from drivers/usb/gadget/s3c-udc-otg-hs.c:630:
+drivers/usb/gadget/fsa9480_i2c.c:17: warning: type defaults to 'int' in declaration of 'ftm_sleep'
+drivers/usb/gadget/fsa9480_i2c.c: In function 'fsa9480_check_usb_connection':
+drivers/usb/gadget/fsa9480_i2c.c:224: warning: ISO C90 forbids mixed declarations and code
+drivers/usb/gadget/fsa9480_i2c.c: In function 'usb_sel_store':
+drivers/usb/gadget/fsa9480_i2c.c:425: warning: ISO C90 forbids mixed declarations and code
+drivers/usb/gadget/fsa9480_i2c.c: In function 'fsa9480_codec_probe':
+drivers/usb/gadget/fsa9480_i2c.c:536: warning: ISO C90 forbids mixed declarations and code
+drivers/usb/gadget/fsa9480_i2c.c:564: warning: 'i2c_attach_client' is deprecated (declared at include/linux/i2c.h:434)
+drivers/usb/gadget/fsa9480_i2c.c: In function 'fsa9480_i2c_detach':
+drivers/usb/gadget/fsa9480_i2c.c:601: warning: 'i2c_detach_client' is deprecated (declared at include/linux/i2c.h:435)
+drivers/usb/gadget/fsa9480_i2c.c: At top level:
+drivers/usb/gadget/fsa9480_i2c.c:636: warning: initialization from incompatible pointer type
+drivers/usb/gadget/fsa9480_i2c.c: In function 'fsa9480_SetManualSW':
+drivers/usb/gadget/fsa9480_i2c.c:666: warning: ISO C90 forbids mixed declarations and code
+drivers/usb/gadget/fsa9480_i2c.c: In function 'fsa9480_SetAutoSWMode':
+drivers/usb/gadget/fsa9480_i2c.c:713: warning: ISO C90 forbids mixed declarations and code
+drivers/usb/gadget/fsa9480_i2c.c:713: warning: unused variable 'cont_reg'
+drivers/usb/gadget/fsa9480_i2c.c: In function 'fsa9480_MakeRxdLow':
+drivers/usb/gadget/fsa9480_i2c.c:733: warning: ISO C90 forbids mixed declarations and code
+  CC      drivers/staging/android/lowmemorykiller.o
+  CC      net/ipv4/sysfs_net_ipv4.o
+  LD      drivers/staging/android/built-in.o
+  LD      drivers/staging/built-in.o
+  CC      drivers/video/fb_notify.o
+  CC      drivers/video/fbmem.o
+  CC      net/ipv4/fib_hash.o
+  CC      net/ipv6/protocol.o
+  CC      net/ipv6/icmp.o
+  CC      drivers/usb/gadget/adb_ums_acm.o
+  CC      drivers/video/fbmon.o
+  CC      net/ipv4/proc.o
+  CC      net/ipv6/mcast.o
+  CC      net/ipv4/ipip.o
+  CC      drivers/usb/gadget/f_adb.o
+  CC      drivers/video/fbcmap.o
+  CC      drivers/video/fbsysfs.o
+  CC      net/ipv4/xfrm4_mode_beet.o
+  CC      drivers/usb/gadget/f_mass_storage.o
+  CC      drivers/video/modedb.o
+drivers/usb/gadget/f_mass_storage.c: In function 'do_inquiry':
+drivers/usb/gadget/f_mass_storage.c:1280: warning: unused variable 'product_id'
+drivers/usb/gadget/f_mass_storage.c:1279: warning: unused variable 'vendor_id'
+  CC      net/ipv4/tunnel4.o
+  CC      drivers/video/fbcvt.o
+  CC      net/ipv4/xfrm4_mode_transport.o
+  CC      net/ipv6/reassembly.o
+  LD      drivers/video/backlight/built-in.o
+  CC      drivers/video/console/dummycon.o
+  CC      net/ipv4/xfrm4_mode_tunnel.o
+  LD      drivers/video/console/built-in.o
+  LD      drivers/video/display/built-in.o
+  CC      drivers/video/samsung/s3cfb.o
+drivers/video/samsung/s3cfb.c:1022: warning: initialization from incompatible pointer type
+drivers/video/samsung/s3cfb.c:97: warning: 'marks_ver_mark' defined but not used
+  CC      net/ipv4/ipconfig.o
+  CC      drivers/usb/gadget/u_serial.o
+  CC      net/ipv6/tcp_ipv6.o
+  CC      drivers/video/samsung/s3cfb_spi.o
+  CC      drivers/video/samsung/s3cfb_fimd4x.o
+  CC      drivers/usb/gadget/f_acm.o
+drivers/video/samsung/s3cfb_fimd4x.c: In function 's3cfb_enable_clock_power':
+drivers/video/samsung/s3cfb_fimd4x.c:2018: warning: ISO C90 forbids mixed declarations and code
+  CC      net/ipv4/netfilter.o
+  CC      drivers/usb/gadget/serial_acm.o
+  CC      net/ipv4/netfilter/nf_nat_rule.o
+  LD      drivers/usb/gadget/g_android_adb_ums_acm.o
+  LD      drivers/usb/gadget/built-in.o
+  CC      drivers/video/samsung/s3cfb_s6d05a.o
+  CC      net/ipv4/netfilter/nf_nat_standalone.o
+  CC      net/ipv6/exthdrs.o
+drivers/video/samsung/s3cfb_s6d05a.c:591: warning: 's6d05a_backlight_off' defined but not used
+drivers/video/samsung/s3cfb_s6d05a.c:593: warning: 's6d05a_backlight_last_level' defined but not used
+  CC      net/key/af_key.o
+  CC      net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.o
+  LD      drivers/video/samsung/built-in.o
+  CC      drivers/video/cfbfillrect.o
+  CC      net/ipv6/datagram.o
+  CC      net/ipv4/netfilter/nf_conntrack_proto_icmp.o
+  CC      drivers/video/cfbcopyarea.o
+  CC      drivers/video/cfbimgblt.o
+  CC      net/ipv4/netfilter/nf_conntrack_l3proto_ipv4_compat.o
+  CC      net/ipv6/ip6_flowlabel.o
+  LD      drivers/video/fb.o
+  LD      drivers/video/built-in.o
+  LD      drivers/built-in.o
+  CC      net/ipv6/inet6_connection_sock.o
+  CC      net/ipv4/netfilter/nf_nat_core.o
+  CC      net/ipv6/sysctl_net_ipv6.o
+  CC      net/ipv6/xfrm6_policy.o
+  CC      net/ipv4/netfilter/nf_nat_helper.o
+  CC      net/ipv4/inet_diag.o
+  LD      net/key/built-in.o
+  CC      net/mac80211/main.o
+  CC      net/ipv6/xfrm6_state.o
+  CC      net/ipv4/netfilter/nf_nat_proto_unknown.o
+  CC      net/ipv6/xfrm6_input.o
+  CC      net/mac80211/wext.o
+  CC      net/mac80211/sta_info.o
+  CC      net/ipv4/netfilter/nf_nat_proto_common.o
+  CC      net/ipv6/xfrm6_output.o
+  CC      net/ipv4/netfilter/nf_nat_proto_tcp.o
+  CC      net/ipv6/netfilter.o
+  CC      net/mac80211/wep.o
+  CC      net/ipv4/netfilter/nf_nat_proto_udp.o
+  CC      net/mac80211/wpa.o
+  CC      net/ipv4/netfilter/nf_nat_proto_icmp.o
+  CC      net/ipv6/fib6_rules.o
+  CC      net/ipv6/proc.o
+  CC      net/mac80211/scan.o
+  CC      net/ipv4/netfilter/nf_defrag_ipv4.o
+  CC      net/ipv6/ah6.o
+  CC      net/ipv4/netfilter/nf_nat_ftp.o
+  CC      net/ipv6/esp6.o
+  CC      net/ipv4/netfilter/nf_nat_sip.o
+  CC      net/mac80211/ht.o
+  CC      net/ipv4/netfilter/ip_tables.o
+  CC      net/ipv6/ipcomp6.o
+  CC      net/netfilter/core.o
+  CC      net/ipv6/xfrm6_tunnel.o
+  CC      net/mac80211/mlme.o
+  CC      net/netfilter/nf_log.o
+  CC      net/ipv6/tunnel6.o
+  CC      net/ipv4/netfilter/iptable_filter.o
+  CC      net/netfilter/nf_queue.o
+  LD      net/ipv4/netfilter/iptable_nat.o
+  CC      net/ipv4/netfilter/ipt_ttl.o
+  CC      net/ipv6/xfrm6_mode_transport.o
+  CC      net/ipv4/netfilter/ipt_LOG.o
+  CC      net/ipv6/xfrm6_mode_tunnel.o
+  CC      net/netfilter/nf_sockopt.o
+  CC      net/netfilter/nf_conntrack_core.o
+  CC      net/ipv6/xfrm6_mode_beet.o
+  CC      net/ipv4/netfilter/ipt_MASQUERADE.o
+  CC      net/mac80211/iface.o
+  CC      net/ipv6/mip6.o
+  CC      net/ipv4/netfilter/ipt_REJECT.o
+  CC      net/netfilter/nf_conntrack_standalone.o
+  CC      net/ipv4/netfilter/ipt_ULOG.o
+  CC      net/mac80211/rate.o
+  CC      net/ipv6/netfilter/ip6_tables.o
+  CC      net/netfilter/nf_conntrack_expect.o
+  CC      net/ipv4/netfilter/ip_queue.o
+  CC      net/mac80211/michael.o
+  CC      net/mac80211/tkip.o
+  CC      net/ipv6/netfilter/ip6table_filter.o
+  LD      net/ipv4/netfilter/nf_conntrack_ipv4.o
+  LD      net/ipv4/netfilter/nf_nat.o
+  LD      net/ipv4/netfilter/built-in.o
+  CC      net/ipv4/tcp_diag.o
+  CC      net/mac80211/aes_ccm.o
+  CC      net/netfilter/nf_conntrack_helper.o
+  CC      net/ipv6/netfilter/ip6table_mangle.o
+  CC      net/ipv4/tcp_cubic.o
+  CC      net/mac80211/cfg.o
+  CC      net/netfilter/nf_conntrack_proto.o
+  CC      net/ipv6/netfilter/ip6_queue.o
+  CC      net/ipv4/xfrm4_policy.o
+  CC      net/netfilter/nf_conntrack_l3proto_generic.o
+  CC      net/ipv6/netfilter/nf_conntrack_l3proto_ipv6.o
+  CC      net/netfilter/nf_conntrack_proto_generic.o
+  CC      net/mac80211/rx.o
+  CC      net/ipv4/xfrm4_state.o
+  CC      net/netfilter/nf_conntrack_proto_tcp.o
+  CC      net/ipv6/netfilter/nf_conntrack_proto_icmpv6.o
+  CC      net/ipv4/xfrm4_input.o
+  CC      net/ipv6/netfilter/nf_conntrack_reasm.o
+  CC      net/ipv4/xfrm4_output.o
+  CC      net/netfilter/nf_conntrack_proto_udp.o
+  LD      net/ipv4/built-in.o
+  CC      net/netlink/af_netlink.o
+  CC      net/ipv6/netfilter/ip6t_LOG.o
+  CC      net/netfilter/nf_conntrack_extend.o
+  CC      net/mac80211/spectmgmt.o
+  CC      net/netfilter/nf_conntrack_acct.o
+  CC      net/mac80211/tx.o
+  CC      net/ipv6/netfilter/ip6t_REJECT.o
+  CC      net/netfilter/nfnetlink.o
+  LD      net/ipv6/netfilter/nf_conntrack_ipv6.o
+  LD      net/ipv6/netfilter/built-in.o
+  CC      net/ipv6/sit.o
+  CC      net/netfilter/nfnetlink_queue.o
+  CC      net/netlink/attr.o
+  CC      net/netlink/genetlink.o
+  CC      net/mac80211/key.o
+  CC      net/netfilter/nfnetlink_log.o
+  CC      net/ipv6/ip6_tunnel.o
+  CC      net/mac80211/util.o
+  LD      net/netlink/built-in.o
+  CC      net/packet/af_packet.o
+  LD      net/netfilter/nf_conntrack.o
+  CC      net/netfilter/nf_conntrack_ftp.o
+  CC      net/mac80211/wme.o
+  CC      net/ipv6/addrconf_core.o
+  CC      net/netfilter/nf_conntrack_sip.o
+  LD      net/packet/built-in.o
+  CC      net/rfkill/rfkill.o
+  CC      net/ipv6/exthdrs_core.o
+  CC      net/mac80211/event.o
+  CC      net/rfkill/rfkill-input.o
+  CC      net/mac80211/mesh.o
+  CC      net/ipv6/inet6_hashtables.o
+  LD      net/rfkill/built-in.o
+  CC      net/mac80211/mesh_pathtbl.o
+  CC      net/netfilter/x_tables.o
+  LD      net/ipv6/ipv6.o
+  LD      net/ipv6/built-in.o
+  CC      net/sched/sch_generic.o
+  CC      net/unix/af_unix.o
+  CC      net/mac80211/mesh_plink.o
+  CC      net/netfilter/xt_tcpudp.o
+  LD      net/sched/built-in.o
+  CC      net/wireless/wext.o
+  CC      net/mac80211/mesh_hwmp.o
+  CC      net/netfilter/xt_CLASSIFY.o
+  CC      net/unix/garbage.o
+  CC      net/wireless/core.o
+  CC      net/netfilter/xt_CONNMARK.o
+  CC      net/mac80211/rc80211_minstrel.o
+  CC      net/netfilter/xt_MARK.o
+  CC      net/unix/sysctl_net_unix.o
+  CC      net/wireless/sysfs.o
+  CC      net/netfilter/xt_NFLOG.o
+  CC      net/wireless/radiotap.o
+  LD      net/unix/unix.o
+  LD      net/unix/built-in.o
+  CC      net/xfrm/xfrm_policy.o
+  LD      net/mac80211/mac80211.o
+  CC      net/netfilter/xt_NFQUEUE.o
+  LD      net/mac80211/built-in.o
+  CC      net/netfilter/xt_connlimit.o
+  CC      net/wireless/util.o
+  CC      net/xfrm/xfrm_state.o
+  CC      net/wireless/reg.o
+  CC      net/netfilter/xt_connmark.o
+  CC      net/netfilter/xt_conntrack.o
+  CC      net/wireless/wext-compat.o
+  CC      net/netfilter/xt_iprange.o
+  CC      net/wireless/nl80211.o
+  CC      net/netfilter/xt_length.o
+  CC      net/xfrm/xfrm_hash.o
+  CC      net/xfrm/xfrm_input.o
+  CC      net/netfilter/xt_limit.o
+  CC      net/sysctl_net.o
+  CC      net/netfilter/xt_mac.o
+  CC      net/netfilter/xt_mark.o
+  CC      net/xfrm/xfrm_output.o
+  CC      net/xfrm/xfrm_algo.o
+  CC      net/netfilter/xt_multiport.o
+  CC      net/xfrm/xfrm_sysctl.o
+  LD      net/wireless/cfg80211.o
+  LD      net/wireless/built-in.o
+  CC      net/xfrm/xfrm_ipcomp.o
+  CC      net/netfilter/xt_owner.o
+  CC      net/netfilter/xt_realm.o
+  CC      net/netfilter/xt_state.o
+  CC      net/netfilter/xt_string.o
+  CC      net/netfilter/xt_time.o
+  LD      net/netfilter/netfilter.o
+  LD      net/xfrm/built-in.o
+  LD      net/netfilter/built-in.o
+  LD      net/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+WARNING: modpost: Found 3 section mismatch(es).
+To see full details build your kernel with:
+'make CONFIG_DEBUG_SECTION_MISMATCH=y'
+  GEN     .version
+  CHK     include/linux/compile.h
+  UPD     include/linux/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+  KSYM    .tmp_kallsyms1.S
+  AS      .tmp_kallsyms1.o
+  LD      .tmp_vmlinux2
+  KSYM    .tmp_kallsyms2.S
+  AS      .tmp_kallsyms2.o
+  LD      vmlinux
+  SYSMAP  System.map
+  SYSMAP  .tmp_System.map
+  OBJCOPY arch/arm/boot/Image
+  Building modules, stage 2.
+  MODPOST 3 modules
+  Kernel: arch/arm/boot/Image is ready
+  AS      arch/arm/boot/compressed/head.o
+  GZIP    arch/arm/boot/compressed/piggy.gz
+  CC      arch/arm/boot/compressed/misc.o
+  CC      drivers/net/tun.mod.o
+  CC      drivers/hid/hid-dummy.mod.o
+  CC      fs/cifs/cifs.mod.o
+  LD [M]  drivers/hid/hid-dummy.ko
+  LD [M]  drivers/net/tun.ko
+  LD [M]  fs/cifs/cifs.ko
+  AS      arch/arm/boot/compressed/piggy.o
+  LD      arch/arm/boot/compressed/vmlinux
+  OBJCOPY arch/arm/boot/zImage
+  Kernel: arch/arm/boot/zImage is ready
+rm -rf *.o *.ko *.mod.* *~ .*.cmd Module.symvers modules.order .tmp_versions .*.o.d 
+make --no-print-directory -C /home/spica/i5700.2/kernel SUBDIRS=/home/spica/i5700.2/modules/mfc modules
+  CC [M]  /home/spica/i5700.2/modules/mfc/Prism_S_V13C.o
+  CC [M]  /home/spica/i5700.2/modules/mfc/BitProcBuf.o
+  CC [M]  /home/spica/i5700.2/modules/mfc/DataBuf.o
+  CC [M]  /home/spica/i5700.2/modules/mfc/FramBufMgr.o
+  CC [M]  /home/spica/i5700.2/modules/mfc/LogMsg.o
+  CC [M]  /home/spica/i5700.2/modules/mfc/MFC_HW_Init.o
+  CC [M]  /home/spica/i5700.2/modules/mfc/MFC_Inst_Pool.o
+  CC [M]  /home/spica/i5700.2/modules/mfc/MFC_Instance.o
+  CC [M]  /home/spica/i5700.2/modules/mfc/MfcMemory.o
+  CC [M]  /home/spica/i5700.2/modules/mfc/MfcMutex.o
+  CC [M]  /home/spica/i5700.2/modules/mfc/MfcSfr.o
+  CC [M]  /home/spica/i5700.2/modules/mfc/s3c-mfc.o
+  CC [M]  /home/spica/i5700.2/modules/mfc/MfcIntrNotification.o
+  CC [M]  /home/spica/i5700.2/modules/mfc/MfcSetConfig.o
+  LD [M]  /home/spica/i5700.2/modules/mfc/s3c_mfc.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/spica/i5700.2/modules/mfc/s3c_mfc.mod.o
+  LD [M]  /home/spica/i5700.2/modules/mfc/s3c_mfc.ko
+rm -rf *.o *.ko *.mod.c *~ .*.cmd Module.symvers modules.order .tmp_versions	\
+	 	src/dhd/sys/dhd_linux.o \
+		src/shared/bcmutils.o \
+		src/dhd/sys/dhd_common.o \
+		src/shared/siutils.o \
+		src/shared/sbutils.o \
+		src/shared/aiutils.o \
+		src/shared/hndpmu.o \
+		src/wl/sys/wl_iw.o \
+		src/shared/bcmwifi.o \
+		src/dhd/sys/dhd_cdc.o \
+		src/dhd/sys/dhd_linux_sched.o\
+		src/dhd/sys/dhd_sdio.o \
+		src/dhd/sys/dhd_custom_gpio.o \
+		src/bcmsdio/sys/bcmsdh_sdmmc.o \
+		src/bcmsdio/sys/bcmsdh.o \
+		src/bcmsdio/sys/bcmsdh_linux.o \
+		src/bcmsdio/sys/bcmsdh_sdmmc_linux.o \
+		src/bcmsdio/sys/wlgpio.o \
+		src/shared/linux_osl.o
+make --no-print-directory -C /home/spica/i5700.2/kernel SUBDIRS=/home/spica/i5700.2/modules/wlan modules
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/dhd/sys/dhd_linux.o
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/shared/bcmutils.o
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/dhd/sys/dhd_common.o
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/shared/siutils.o
+/home/spica/i5700.2/modules/wlan/src/dhd/sys/dhd_linux.c:283: warning: return type defaults to 'int'
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/shared/sbutils.o
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/shared/aiutils.o
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/shared/hndpmu.o
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/wl/sys/wl_iw.o
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/shared/bcmwifi.o
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/dhd/sys/dhd_cdc.o
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/dhd/sys/dhd_linux_sched.o
+/home/spica/i5700.2/modules/wlan/src/wl/sys/wl_iw.c: In function 'wl_iw_set_hostip':
+/home/spica/i5700.2/modules/wlan/src/wl/sys/wl_iw.c:498: warning: unused variable 'temp2'
+/home/spica/i5700.2/modules/wlan/src/wl/sys/wl_iw.c:497: warning: unused variable 'temp'
+/home/spica/i5700.2/modules/wlan/src/wl/sys/wl_iw.c:496: warning: unused variable 'tmp'
+/home/spica/i5700.2/modules/wlan/src/wl/sys/wl_iw.c:495: warning: unused variable 'ptr'
+/home/spica/i5700.2/modules/wlan/src/wl/sys/wl_iw.c:488: warning: unused variable 'ip_size'
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/dhd/sys/dhd_sdio.o
+/home/spica/i5700.2/modules/wlan/src/dhd/sys/dhd_cdc.c: In function 'dhd_preinit_ioctls':
+/home/spica/i5700.2/modules/wlan/src/dhd/sys/dhd_cdc.c:575: warning: control reaches end of non-void function
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/dhd/sys/dhd_custom_gpio.o
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/bcmsdh_sdmmc.o
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/bcmsdh.o
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/bcmsdh_linux.o
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/bcmsdh_sdmmc_linux.o
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/wlgpio.o
+/home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/bcmsdh_sdmmc_linux.c:547: warning: 'dhd_enable_hwakeup' defined but not used
+/home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/bcmsdh_sdmmc_linux.c:565: warning: 'dhd_disable_hwakeup' defined but not used
+/home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/wlgpio.c:107: warning: function declaration isn't a prototype
+/home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/wlgpio.c: In function 'gpio_wlan_poweron':
+/home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/wlgpio.c:145: warning: comparison of distinct pointer types lacks a cast
+/home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/wlgpio.c:145: warning: comparison of distinct pointer types lacks a cast
+/home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/wlgpio.c:165: warning: comparison of distinct pointer types lacks a cast
+/home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/wlgpio.c:165: warning: comparison of distinct pointer types lacks a cast
+/home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/wlgpio.c: In function 'gpio_wlan_poweroff':
+/home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/wlgpio.c:186: warning: comparison of distinct pointer types lacks a cast
+/home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/wlgpio.c:186: warning: comparison of distinct pointer types lacks a cast
+/home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/wlgpio.c:209: warning: comparison of distinct pointer types lacks a cast
+/home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/wlgpio.c:209: warning: comparison of distinct pointer types lacks a cast
+/home/spica/i5700.2/modules/wlan/src/bcmsdio/sys/wlgpio.c:178: warning: unused variable 'ret'
+  CC [M]  /home/spica/i5700.2/modules/wlan/src/shared/linux_osl.o
+  LD [M]  /home/spica/i5700.2/modules/wlan/dhd.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/spica/i5700.2/modules/wlan/dhd.mod.o
+  LD [M]  /home/spica/i5700.2/modules/wlan/dhd.ko
+rm -f *.o *.ko *.mod.c *.mod.o *~ .*.cmd .*.o.cmd Module.symvers modules.order 
+make --no-print-directory -C /home/spica/i5700.2/kernel SUBDIRS=/home/spica/i5700.2/modules/btgpio modules
+  CC [M]  /home/spica/i5700.2/modules/btgpio/btgpio.o
+/home/spica/i5700.2/modules/btgpio/btgpio.c:55: warning: function declaration isn't a prototype
+/home/spica/i5700.2/modules/btgpio/btgpio.c:100: warning: function declaration isn't a prototype
+/home/spica/i5700.2/modules/btgpio/btgpio.c: In function 'btgpio_ioctl':
+/home/spica/i5700.2/modules/btgpio/btgpio.c:171: warning: passing argument 1 of 'copy_to_user' makes pointer from integer without a cast
+/home/spica/i5700.2/modules/btgpio/btgpio.c:171: warning: ignoring return value of 'copy_to_user', declared with attribute warn_unused_result
+/home/spica/i5700.2/modules/btgpio/btgpio.c: At top level:
+/home/spica/i5700.2/modules/btgpio/btgpio.c:183: warning: initialization from incompatible pointer type
+/home/spica/i5700.2/modules/btgpio/btgpio.c:193: warning: function declaration isn't a prototype
+/home/spica/i5700.2/modules/btgpio/btgpio.c:211: warning: function declaration isn't a prototype
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/spica/i5700.2/modules/btgpio/btgpio.mod.o
+  LD [M]  /home/spica/i5700.2/modules/btgpio/btgpio.ko
+rm -f *.o *.ko *.mod.c *~ .*.cmd
+  CC [M]  /home/spica/i5700.2/modules/dpram/dpram.o
+/home/spica/i5700.2/modules/dpram/dpram.c:120: warning: function declaration isn't a prototype
+/home/spica/i5700.2/modules/dpram/dpram.c: In function '_memcpy':
+/home/spica/i5700.2/modules/dpram/dpram.c:307: warning: format '%s' expects type 'char *', but argument 2 has type 'unsigned int'
+/home/spica/i5700.2/modules/dpram/dpram.c:307: warning: too few arguments for format
+/home/spica/i5700.2/modules/dpram/dpram.c: In function '_memcmp':
+/home/spica/i5700.2/modules/dpram/dpram.c:329: warning: format '%s' expects type 'char *', but argument 2 has type 'unsigned int'
+/home/spica/i5700.2/modules/dpram/dpram.c:329: warning: too few arguments for format
+/home/spica/i5700.2/modules/dpram/dpram.c: In function 'dpram_read':
+/home/spica/i5700.2/modules/dpram/dpram.c:544: warning: unused variable 'ret'
+/home/spica/i5700.2/modules/dpram/dpram.c: In function 'dpram_nvdata_load':
+/home/spica/i5700.2/modules/dpram/dpram.c:996: warning: ISO C90 forbids mixed declarations and code
+/home/spica/i5700.2/modules/dpram/dpram.c:1000: warning: unused variable 'nSctsPerPg'
+/home/spica/i5700.2/modules/dpram/dpram.c:999: warning: unused variable 'nPgsPerBlk'
+/home/spica/i5700.2/modules/dpram/dpram.c: In function 'dpram_phone_ramdump_on':
+/home/spica/i5700.2/modules/dpram/dpram.c:1323: warning: unused variable 'temp2'
+/home/spica/i5700.2/modules/dpram/dpram.c:1323: warning: unused variable 'temp1'
+/home/spica/i5700.2/modules/dpram/dpram.c: In function 'dpram_phone_ramdump_off':
+/home/spica/i5700.2/modules/dpram/dpram.c:1366: warning: unused variable 'temp2'
+/home/spica/i5700.2/modules/dpram/dpram.c:1366: warning: unused variable 'temp1'
+/home/spica/i5700.2/modules/dpram/dpram.c: In function 'dpram_cp_dump':
+/home/spica/i5700.2/modules/dpram/dpram.c:1556: warning: passing argument 4 of 'BML_Write' from incompatible pointer type
+/home/spica/i5700.2/modules/dpram/dpram.c:1429: warning: unused variable 'nEndVbn'
+/home/spica/i5700.2/modules/dpram/dpram.c:1429: warning: unused variable 'nStartVbn'
+/home/spica/i5700.2/modules/dpram/dpram.c:1428: warning: unused variable 'nBlkNum'
+/home/spica/i5700.2/modules/dpram/dpram.c:1413: warning: unused variable 'pBufIn'
+/home/spica/i5700.2/modules/dpram/dpram.c: In function 'dpram_read_proc':
+/home/spica/i5700.2/modules/dpram/dpram.c:1586: warning: unused variable 'raw_out_tail'
+/home/spica/i5700.2/modules/dpram/dpram.c:1586: warning: unused variable 'raw_out_head'
+/home/spica/i5700.2/modules/dpram/dpram.c:1586: warning: unused variable 'raw_in_tail'
+/home/spica/i5700.2/modules/dpram/dpram.c:1586: warning: unused variable 'raw_in_head'
+/home/spica/i5700.2/modules/dpram/dpram.c:1585: warning: unused variable 'fmt_out_tail'
+/home/spica/i5700.2/modules/dpram/dpram.c:1585: warning: unused variable 'fmt_out_head'
+/home/spica/i5700.2/modules/dpram/dpram.c:1585: warning: unused variable 'fmt_in_tail'
+/home/spica/i5700.2/modules/dpram/dpram.c:1585: warning: unused variable 'fmt_in_head'
+/home/spica/i5700.2/modules/dpram/dpram.c:1584: warning: unused variable 'enable'
+/home/spica/i5700.2/modules/dpram/dpram.c:1584: warning: unused variable 'magic'
+/home/spica/i5700.2/modules/dpram/dpram.c: In function 'non_command_handler':
+/home/spica/i5700.2/modules/dpram/dpram.c:2148: warning: 'return' with a value, in function returning void
+/home/spica/i5700.2/modules/dpram/dpram.c: In function 'init_hw_setting':
+/home/spica/i5700.2/modules/dpram/dpram.c:2472: warning: unused variable 'mask'
+/home/spica/i5700.2/modules/dpram/dpram.c: At top level:
+/home/spica/i5700.2/modules/dpram/dpram.c:115: warning: 'modem_wait_count' defined but not used
+/home/spica/i5700.2/modules/dpram/dpram.c:378: warning: 'send_interrupt_to_phone' defined but not used
+/home/spica/i5700.2/modules/dpram/dpram.c:630: warning: 'print_onedram_status' defined but not used
+/home/spica/i5700.2/modules/dpram/dpram.c:1305: warning: 'dpram_mem_rw' defined but not used
+/home/spica/i5700.2/modules/dpram/dpram.c:2070: warning: 'cmd_smp_req_handler' defined but not used
+/home/spica/i5700.2/modules/dpram/dpram.c:2341: warning: 'pm_irq_handler' defined but not used
+  Building modules, stage 2.
+  MODPOST 1 modules
+WARNING: "BML_MRead" [/home/spica/i5700.2/modules/dpram/dpram.ko] undefined!
+WARNING: "ONLD_Read" [/home/spica/i5700.2/modules/dpram/dpram.ko] undefined!
+WARNING: "BML_Close" [/home/spica/i5700.2/modules/dpram/dpram.ko] undefined!
+WARNING: "BML_Write" [/home/spica/i5700.2/modules/dpram/dpram.ko] undefined!
+WARNING: "BML_GetVolInfo" [/home/spica/i5700.2/modules/dpram/dpram.ko] undefined!
+WARNING: "BML_EraseBlk" [/home/spica/i5700.2/modules/dpram/dpram.ko] undefined!
+WARNING: "BML_IOCtl" [/home/spica/i5700.2/modules/dpram/dpram.ko] undefined!
+WARNING: "BML_LoadPIEntry" [/home/spica/i5700.2/modules/dpram/dpram.ko] undefined!
+WARNING: "BML_Open" [/home/spica/i5700.2/modules/dpram/dpram.ko] undefined!
+  CC      /home/spica/i5700.2/modules/dpram/dpram.mod.o
+  LD [M]  /home/spica/i5700.2/modules/dpram/dpram.ko
+rm -f *.o *.ko *.mod.c *~ .*.cmd
+  CC [M]  /home/spica/i5700.2/modules/multipdp/multipdp.o
+/home/spica/i5700.2/modules/multipdp/multipdp.c: In function 'dpram_thread':
+/home/spica/i5700.2/modules/multipdp/multipdp.c:441: warning: unused variable 'flag'
+/home/spica/i5700.2/modules/multipdp/multipdp.c: In function 'vs_write':
+/home/spica/i5700.2/modules/multipdp/multipdp.c:832: warning: unused variable 'flag'
+/home/spica/i5700.2/modules/multipdp/multipdp.c: In function 'pdp_add_dev':
+/home/spica/i5700.2/modules/multipdp/multipdp.c:1046: warning: too few arguments for format
+/home/spica/i5700.2/modules/multipdp/multipdp.c: In function 'pdp_activate':
+/home/spica/i5700.2/modules/multipdp/multipdp.c:1275: warning: unused variable 'tty_driver'
+/home/spica/i5700.2/modules/multipdp/multipdp.c: In function 'pdp_deactivate':
+/home/spica/i5700.2/modules/multipdp/multipdp.c:1311: warning: passing argument 1 of 'printk' makes pointer from integer without a cast
+/home/spica/i5700.2/modules/multipdp/multipdp.c:1316: warning: passing argument 1 of 'printk' makes pointer from integer without a cast
+/home/spica/i5700.2/modules/multipdp/multipdp.c:1329: warning: unused variable 'tty_driver'
+/home/spica/i5700.2/modules/multipdp/multipdp.c: In function 'pdp_cleanup':
+/home/spica/i5700.2/modules/multipdp/multipdp.c:1354: warning: unused variable 'tty_driver'
+/home/spica/i5700.2/modules/multipdp/multipdp.c: In function 'multipdp_init':
+/home/spica/i5700.2/modules/multipdp/multipdp.c:1489: warning: ISO C90 forbids mixed declarations and code
+/home/spica/i5700.2/modules/multipdp/multipdp.c:1542: warning: label 'err0' defined but not used
+/home/spica/i5700.2/modules/multipdp/multipdp.c: At top level:
+/home/spica/i5700.2/modules/multipdp/multipdp.c:939: warning: 'vs_break_ctl' defined but not used
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/spica/i5700.2/modules/multipdp/multipdp.mod.o
+  LD [M]  /home/spica/i5700.2/modules/multipdp/multipdp.ko
+  CHK     include/linux/version.h
+  SYMLINK include/asm -> include/asm-arm
+make[1]: `include/asm-arm/mach-types.h' не требует обновления.
+  CHK     include/linux/utsrelease.h
+  CALL    scripts/checksyscalls.sh
+<stdin>:1097:2: warning: #warning syscall fadvise64 not implemented
+<stdin>:1265:2: warning: #warning syscall migrate_pages not implemented
+<stdin>:1321:2: warning: #warning syscall pselect6 not implemented
+<stdin>:1325:2: warning: #warning syscall ppoll not implemented
+<stdin>:1365:2: warning: #warning syscall epoll_pwait not implemented
+  CHK     include/linux/compile.h
+  GEN     usr/initramfs_data.cpio.gz
+  AS      usr/initramfs_data.o
+  LD      usr/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+WARNING: modpost: Found 3 section mismatch(es).
+To see full details build your kernel with:
+'make CONFIG_DEBUG_SECTION_MISMATCH=y'
+  GEN     .version
+  CHK     include/linux/compile.h
+  UPD     include/linux/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+  KSYM    .tmp_kallsyms1.S
+  AS      .tmp_kallsyms1.o
+  LD      .tmp_vmlinux2
+  KSYM    .tmp_kallsyms2.S
+  AS      .tmp_kallsyms2.o
+  LD      vmlinux
+  SYSMAP  System.map
+  SYSMAP  .tmp_System.map
+  OBJCOPY arch/arm/boot/Image
+  Building modules, stage 2.
+  MODPOST 3 modules
+  Kernel: arch/arm/boot/Image is ready
+  GZIP    arch/arm/boot/compressed/piggy.gz
+  AS      arch/arm/boot/compressed/piggy.o
+  LD      arch/arm/boot/compressed/vmlinux
+  OBJCOPY arch/arm/boot/zImage
+  Kernel: arch/arm/boot/zImage is ready
+-rwxr-xr-x spica/spica 3682696 2010-06-11 23:56 zImage
+-rw-r--r-- spica/spica   49784 2010-05-13 06:26 logo.png

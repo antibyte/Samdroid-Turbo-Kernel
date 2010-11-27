@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd ~/Samdroid-Turbo-Kernel/kernel
+make
+
+# cp ~/aosp/out/target/product/GT-I5700/system/bin/recovery ~/Samdroid-Turbo-Kernel/initramfs/sbin
+cd ~/Samdroid-Turbo-Kernel/firmwares
+cp ~/Samdroid-Turbo-Kernel/kernel/arch/arm/boot/zImage .
+./_m

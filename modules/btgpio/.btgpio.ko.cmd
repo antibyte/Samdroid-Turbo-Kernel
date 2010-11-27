@@ -1,0 +1,1 @@
+cmd_/home/spica/Samdroid-Turbo-Kernel/modules/btgpio/btgpio.ko := /opt/ctng/bin/arm-spica-linux-uclibcgnueabi-ld -EL -r   -o /home/spica/Samdroid-Turbo-Kernel/modules/btgpio/btgpio.ko /home/spica/Samdroid-Turbo-Kernel/modules/btgpio/btgpio.o /home/spica/Samdroid-Turbo-Kernel/modules/btgpio/btgpio.mod.o

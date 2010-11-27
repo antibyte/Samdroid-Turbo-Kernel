@@ -1,0 +1,1 @@
+cmd_/home/spica/Samdroid-Turbo-Kernel/modules/rotator/s3c_rotator.ko := /opt/ctng/bin/arm-spica-linux-uclibcgnueabi-ld -EL -r   -o /home/spica/Samdroid-Turbo-Kernel/modules/rotator/s3c_rotator.ko /home/spica/Samdroid-Turbo-Kernel/modules/rotator/s3c_rotator.o /home/spica/Samdroid-Turbo-Kernel/modules/rotator/s3c_rotator.mod.o

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+make -j4 KDIR=~/Samdroid-Turbo-Kernel/kernel CFLAGS="-O$1 -flto -march=armv6zk -mfpu=vfp -mfloat-abi=softfp -mtune=arm1176jzf-s"
+cp *.ko ~/Samdroid-Turbo-Kernel/initramfs/lib/modules

@@ -1,0 +1,1 @@
+cmd_/home/spica/Samdroid-Turbo-Kernel/modules/multipdp/multipdp.ko := /opt/ctng/bin/arm-spica-linux-uclibcgnueabi-ld -EL -r   -o /home/spica/Samdroid-Turbo-Kernel/modules/multipdp/multipdp.ko /home/spica/Samdroid-Turbo-Kernel/modules/multipdp/multipdp.o /home/spica/Samdroid-Turbo-Kernel/modules/multipdp/multipdp.mod.o

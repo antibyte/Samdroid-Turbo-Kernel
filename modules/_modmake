@@ -1,0 +1,70 @@
+#!/bin/sh
+
+cd ~/Samdroid-Turbo-Kernel/modules
+cd mfc
+make clean
+../_mm 4
+cd ..
+
+cd wlan
+make clean
+../_mm 3
+cd ..
+
+cd btgpio
+make clean
+../_mm 2
+cd ..
+
+cd dpram
+make clean
+../_mm s
+cd ..
+
+cd multipdp
+make clean
+../_mm s
+cd ..
+
+cd pp
+make clean
+../_mm 4
+cd ..
+
+cd g3d
+make clean
+../_mm 4
+cd ..
+
+cd g2d
+make clean
+../_mm 4
+cd ..
+
+cd rotator
+make clean
+../_mm 4
+cd ..
+
+cd camera
+make clean
+../_mm 4
+cd ..
+
+# DO NOT COMPILE THIS ONE !
+# Produced strange results (Display controller crash !)
+# Better just keep the original
+#cd cmm
+#make clean
+#../_mm 
+#cd ..
+
+cd jpeg
+make clean
+../_mm 4
+cd ..
+
+cd vibetonz
+make clean
+../_mm s
+cd ..

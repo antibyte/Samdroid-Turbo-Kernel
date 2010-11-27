@@ -1,0 +1,1 @@
+cmd_/home/spica/Samdroid-Turbo-Kernel/modules/jpeg/s3c_jpeg.ko := /opt/ctng/bin/arm-spica-linux-uclibcgnueabi-ld -EL -r   -o /home/spica/Samdroid-Turbo-Kernel/modules/jpeg/s3c_jpeg.ko /home/spica/Samdroid-Turbo-Kernel/modules/jpeg/s3c_jpeg.o /home/spica/Samdroid-Turbo-Kernel/modules/jpeg/s3c_jpeg.mod.o

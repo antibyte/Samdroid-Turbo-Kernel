@@ -1,0 +1,1 @@
+cmd_/home/spica/Samdroid-Turbo-Kernel/modules/pp/s3c_pp.ko := /opt/ctng/bin/arm-spica-linux-uclibcgnueabi-ld -EL -r   -o /home/spica/Samdroid-Turbo-Kernel/modules/pp/s3c_pp.ko /home/spica/Samdroid-Turbo-Kernel/modules/pp/s3c_pp.o /home/spica/Samdroid-Turbo-Kernel/modules/pp/s3c_pp.mod.o

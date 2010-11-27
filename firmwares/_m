@@ -1,0 +1,3 @@
+#!/bin/sh
+rm LkKernel_PDA.tar
+tar -cvvf LkKernel_PDA.tar zImage logo.png

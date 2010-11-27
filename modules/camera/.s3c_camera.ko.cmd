@@ -1,0 +1,1 @@
+cmd_/home/spica/Samdroid-Turbo-Kernel/modules/camera/s3c_camera.ko := /opt/ctng/bin/arm-spica-linux-uclibcgnueabi-ld -EL -r   -o /home/spica/Samdroid-Turbo-Kernel/modules/camera/s3c_camera.ko /home/spica/Samdroid-Turbo-Kernel/modules/camera/s3c_camera.o /home/spica/Samdroid-Turbo-Kernel/modules/camera/s3c_camera.mod.o

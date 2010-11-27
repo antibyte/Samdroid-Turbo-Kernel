@@ -1,0 +1,1 @@
+cmd_/home/spica/i5700.2/modules/cmm/s3c_cmm.o := /opt/ctng/bin/arm-spica-linux-uclibcgnueabi-ld -EL    -r -o /home/spica/i5700.2/modules/cmm/s3c_cmm.o /home/spica/i5700.2/modules/cmm/LogMsg.o /home/spica/i5700.2/modules/cmm/CMMMisc.o /home/spica/i5700.2/modules/cmm/s3c-cmm.o 

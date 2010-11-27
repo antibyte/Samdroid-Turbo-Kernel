@@ -1,0 +1,11 @@
+#!/bin/sh
+
+cd ~/Samdroid-Turbo-Kernel/modules
+./_modmake
+
+cp ~/Samdroid-Turbo-Kernel/kernel/fs/cifs/cifs.ko ~/Samdroid-Turbo-Kernel/initramfs/lib/modules
+cp ~/Samdroid-Turbo-Kernel/kernel/drivers/net/tun.ko ~/Samdroid-Turbo-Kernel/initramfs/lib/modules
+
+cd ~/Samdroid-Turbo-Kernel/firmwares
+cp ~/Samdroid-Turbo-Kernel/kernel/arch/arm/boot/zImage .
+./_m

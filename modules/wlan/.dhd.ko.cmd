@@ -1,0 +1,1 @@
+cmd_/home/spica/Samdroid-Turbo-Kernel/modules/wlan/dhd.ko := /opt/ctng/bin/arm-spica-linux-uclibcgnueabi-ld -EL -r   -o /home/spica/Samdroid-Turbo-Kernel/modules/wlan/dhd.ko /home/spica/Samdroid-Turbo-Kernel/modules/wlan/dhd.o /home/spica/Samdroid-Turbo-Kernel/modules/wlan/dhd.mod.o
